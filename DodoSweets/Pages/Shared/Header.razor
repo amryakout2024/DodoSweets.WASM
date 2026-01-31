@@ -1,0 +1,41 @@
+﻿@using Microsoft.Extensions.Options
+
+@inject NavigationManager NavigationManager
+
+@* implements IDisposable
+inject IOptions<ContactInfoOptions> ContactInfoOptions
+ *@
+<div class="container-fluid">
+    <div class="row header-row">
+
+        <input type="text" class="col d-flex flex-column header-input">
+
+        <div class="col-lg-auto">
+            <img class="image-header" src="images/dodoslogo.jpg" />
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private string? currentUrl;
+    // private ContactInfoOptions _contactOptions = new();
+    // protected override void OnInitialized()
+    // {
+    //     _contactOptions = ContactInfoOptions.Value;
+    //     currentUrl = NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+    //     NavigationManager.LocationChanged += OnLocationChanged;
+    // }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(e.Location);
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+}
+

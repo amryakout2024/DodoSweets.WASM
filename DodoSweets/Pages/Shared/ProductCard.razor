@@ -1,0 +1,47 @@
+﻿@inject MudBlazor.ISnackbar Snackbar
+
+<MudCard Style="width:230px;background-color:whitesmoke">
+    <MudCardMedia Image="@Image" Height="180"/>
+
+    <MudCardContent>
+        <MudText Typo="Typo.subtitle2" Align="Align.Center">
+            @Title
+        </MudText>
+
+        <MudStack Row="true" Justify="Justify.Center" Spacing="1">
+            <MudText Color="Color.Default" Style="text-decoration:line-through">
+                @OldPrice ج
+            </MudText>
+
+            <MudText Color="Color.Error" Typo="Typo.h6">
+                @Price ج
+            </MudText>
+        </MudStack>
+    </MudCardContent>
+
+    <MudCardActions>
+        <MudButton Variant="Variant.Filled"
+                   Color="Color.Primary"
+                   FullWidth="true" 
+                   onclick="@AddToCart">
+            إضافة للسلة
+        </MudButton>
+    </MudCardActions>
+</MudCard>
+
+@code {
+
+    [Parameter] 
+        public string Title { get; set; }
+    [Parameter] 
+        public string Image { get; set; }
+    [Parameter] 
+        public decimal Price { get; set; }
+    [Parameter] 
+        public decimal OldPrice { get; set; }
+
+    void AddToCart()
+    {
+        Snackbar.Add("Operation successful!", Severity.Success);
+    }
+}

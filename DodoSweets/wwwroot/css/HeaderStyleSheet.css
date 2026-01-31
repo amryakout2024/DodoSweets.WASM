@@ -1,0 +1,21 @@
+﻿body {
+
+}
+.image-header {
+    width: 100px;
+    float:right;
+    height: auto;
+}
+
+.header-row{
+    align-items:center;
+    margin-right:25px;
+    margin-left:25px;
+    margin-bottom:25px;
+}
+
+.header-input {
+    margin-right: 200px;
+    margin-left: 200px;
+    height:40px;
+}
