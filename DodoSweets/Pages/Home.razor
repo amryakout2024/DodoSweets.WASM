@@ -2,6 +2,39 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<MudGrid Spacing="3" Style="margin-left:40px">
+    @foreach (var p in Cakes)
+    {
+        <MudItem xs="12" sm="6" md="3">
+            <ProductCard Title="@p.Name"
+                         Image="@p.Image"
+                         Price="@p.Price"
+                         OldPrice="@p.OldPrice" />
+        </MudItem>
+    }
+</MudGrid>
 
-Welcome to your new app.
+@code {
+
+    List<Cake> Cakes = new()
+    {
+        new Cake { Name="تشيز كيك", Price=50, OldPrice=70, Image="images/cheesecake.jpg"},
+        new Cake { Name="ديسباسيتو كبير", Price=120, OldPrice=150, Image="images/dispacetolarge.jpg"},
+        new Cake { Name="ديسباسيتو وسط", Price=90, OldPrice=120, Image="images/dispacetomedium.jpg"},
+        new Cake { Name="ديسباسيتو صغير", Price=60, OldPrice=80, Image="images/dispacetosmall.jpg"},
+        new Cake { Name="ديسباسيتو أبيض كبير", Price=130, OldPrice=160, Image="images/dispacetowhitelarge.jpg"},
+        new Cake { Name="ديسباسيتو أبيض صغير", Price=70, OldPrice=90, Image="images/dispacetowhitesmall.jpg"},
+        new Cake { Name="فادج شوكولاتة", Price=80, OldPrice=100 , Image="images/fadegchocolate.jpg"},
+        new Cake { Name="فادج شوكولاتة عين جمل", Price= 90, OldPrice=110 , Image="images/fadegchocolatejamal.jpg"},
+        new Cake { Name="فادج شوكولاتة بالمكسرات", Price =100, OldPrice=120 , Image="images/fadegchocolatenuts.jpg"},
+        new Cake { Name="فادج شوكولاتة توفي", Price=110 , OldPrice=130 , Image="images/fadegchocolatetuffy.jpg"},
+    };
+
+    class Cake
+    {
+        public string Name { get; set; }
+        public string Image { get; set; }
+        public decimal Price { get; set; }
+        public decimal OldPrice { get; set; }
+    }
+}
