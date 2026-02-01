@@ -6,6 +6,9 @@
     float:right;
     height: auto;
 }
+.rounded-input .mud-input-outlined-border {
+    border-radius: 25px;
+}
 
 .header-row{
     align-items:center;

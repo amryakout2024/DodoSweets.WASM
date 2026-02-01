@@ -5,16 +5,45 @@
 @* implements IDisposable
 inject IOptions<ContactInfoOptions> ContactInfoOptions
  *@
-<div class="container-fluid">
-    <div class="row header-row">
 
-        <input type="text" class="col d-flex flex-column header-input">
 
-        <div class="col-lg-auto">
-            <img class="image-header" src="images/dodoslogo.jpg" />
+<MudGrid Class="container-fluid" Style="position:sticky;top:0;z-index:1;background-color:white">
+    <MudItem md="3" Class="d-flex align-items-center justify-content-center d-none d-lg-flex">
+        <MudText 
+            Style="color:deeppink"
+            Typo="Typo.h4" 
+            Align="Align.Center">حلويات دودوز
+        </MudText>
+    </MudItem>
+    <MudItem xs="9" sm="9" md="6" lg="6" Class="d-flex align-items-center">
+        <MudTextField T="string" Clearable="true" 
+            Variant="Variant.Outlined"
+            ClearIcon="@Icons.Material.Filled.Clear" Adornment="Adornment.End" 
+                      AdornmentIcon="@Icons.Material.Filled.Search" Class="rounded-input"
+            Style="text-align:justify;height:40px;border-radius:30px">
+        </MudTextField>
+    </MudItem>
+    <MudItem xs="3" Class="d-flex justify-content-center">
+        <MudImage src="images/dodoslogo.jpg" Class="d-block" alt="Dodo's Cakes Logo" width="100" height="100" />
+    </MudItem>
+</MudGrid>
+
+
+@* <div class="container-fluid">
+    <div class="row">
+        <MudText 
+            Style="align-items:center;color:deeppink"
+            Class="col" 
+            Typo="Typo.h2" 
+            Align="Align.Center">حلويات دودوز
+        </MudText>
+
+        <div class="col-auto">
+            <MudImage src="images/dodoslogo.jpg" Style="position:center" alt="Dodo's Cakes Logo" width="100" height="100" />
         </div>
     </div>
 </div>
+ *@
 
 
 @code {
