@@ -22,3 +22,13 @@
     margin-left: 200px;
     height:40px;
 }
+
+.header-logo{
+    width:100px
+}
+
+@media (max-width: 767px) {
+    .header-logo {
+        width: 80px
+    }
+}

@@ -10,20 +10,25 @@ inject IOptions<ContactInfoOptions> ContactInfoOptions
 <MudGrid Class="container-fluid" Style="position:sticky;top:0;z-index:1;background-color:white">
    
     <MudItem  xs="6" Class="container d-flex col-md-3 align-items-center order-0 justify-content-center">
-        <MudBadge Color="Color.Primary" Style="height:10px"
-            Content="0" Overlap="true" Variant="Variant.Filled">
-            <MudIcon Style="color:deeppink"
-                     Icon="@Icons.Material.Rounded.FavoriteBorder" Size="Size.Medium" />
-        </MudBadge>
 
-@*         <MudStack Spacing="5" Row="true" Class="d-flex justify-content-center">
-            <MudText Style="color:deeppink;font-size:12px">English</MudText>
+        <MudStack Spacing="5" Row="true" Class="d-flex justify-content-center">
+            <MudBadge Color="Color.Primary" Style="height:10px"
+                      Content="0" Overlap="true" Variant="Variant.Filled">
+                <MudIcon Style="color:deeppink"
+                         Icon="@Icons.Material.Rounded.FavoriteBorder" Size="Size.Medium" />
+            </MudBadge>
+
+            <MudIcon Style="color:deeppink"
+                     Icon="@Icons.Material.Filled.SupportAgent" Size="Size.Medium" />
+
+@*             <MudText Style="color:deeppink;font-size:12px">English</MudText>
+ *@        
         </MudStack>
- *@   
+   
     </MudItem>
 
     <MudItem xs="6" Class="d-flex col-md-3 justify-content-center order-1 order-md-2 ">
-        <MudImage src="images/dodoslogo.jpg" Class="d-block" alt="Dodo's Cakes Logo" width="100" height="100" />
+        <MudImage src="images/dodoslogo.jpg" Class="d-block header-logo" alt="Dodo's Cakes Logo"/>
     </MudItem>
 
     <MudItem xs="12" Class="d-flex col-md-6 align-items-center order-2 order-md-1">
