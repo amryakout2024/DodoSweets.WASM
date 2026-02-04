@@ -1,3 +1,5 @@
 ﻿msbuild /t:restore 
 dotnet restore 
 dotnet publish -c release
+
+bs grid col fix mudblazor resposiveness issue

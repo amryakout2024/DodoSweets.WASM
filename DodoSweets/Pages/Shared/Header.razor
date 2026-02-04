@@ -1,33 +1,45 @@
 ﻿@using Microsoft.Extensions.Options
 
+//make pages navigation in blaz
 @inject NavigationManager NavigationManager
 
 @* implements IDisposable
 inject IOptions<ContactInfoOptions> ContactInfoOptions
  *@
 
-
 <MudGrid Class="container-fluid" Style="position:sticky;top:0;z-index:1;background-color:white">
-    <MudItem md="3" Class="d-flex align-items-center justify-content-center d-none d-lg-flex">
-        <MudText 
-            Style="color:deeppink"
-            Typo="Typo.h4" 
-            Align="Align.Center">حلويات دودوز
-        </MudText>
+   
+    <MudItem  xs="6" Class="container d-flex col-md-3 align-items-center order-0 justify-content-center">
+        <MudBadge Color="Color.Primary" Style="height:10px"
+            Content="0" Overlap="true" Variant="Variant.Filled">
+            <MudIcon Style="color:deeppink"
+                     Icon="@Icons.Material.Rounded.FavoriteBorder" Size="Size.Medium" />
+        </MudBadge>
+
+@*         <MudStack Spacing="5" Row="true" Class="d-flex justify-content-center">
+            <MudText Style="color:deeppink;font-size:12px">English</MudText>
+        </MudStack>
+ *@   
     </MudItem>
-    <MudItem xs="9" sm="9" md="6" lg="6" Class="d-flex align-items-center">
-        <MudTextField T="string" Clearable="true" 
-            Variant="Variant.Outlined"
-            ClearIcon="@Icons.Material.Filled.Clear" Adornment="Adornment.End" 
-                      AdornmentIcon="@Icons.Material.Filled.Search" Class="rounded-input"
-            Style="text-align:justify;height:40px;border-radius:30px">
-        </MudTextField>
-    </MudItem>
-    <MudItem xs="3" Class="d-flex justify-content-center">
+
+    <MudItem xs="6" Class="d-flex col-md-3 justify-content-center order-1 order-md-2 ">
         <MudImage src="images/dodoslogo.jpg" Class="d-block" alt="Dodo's Cakes Logo" width="100" height="100" />
     </MudItem>
-</MudGrid>
 
+    <MudItem xs="12" Class="d-flex col-md-6 align-items-center order-2 order-md-1">
+        <MudTextField T="string" Clearable="true"
+                      Variant="Variant.Outlined"
+                      ClearIcon="@Icons.Material.Filled.Clear" Adornment="Adornment.End"
+                      AdornmentIcon="@Icons.Material.Filled.Search" Class="rounded-input"
+                      Style="text-align:justify;height:40px;border-radius:30px">
+        </MudTextField>
+    </MudItem>
+
+
+
+
+    
+</MudGrid>
 
 @* <div class="container-fluid">
     <div class="row">
