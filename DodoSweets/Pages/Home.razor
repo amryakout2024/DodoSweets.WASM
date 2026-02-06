@@ -5,7 +5,7 @@
 <MudGrid Spacing="3" Class="container-fluid d-flex justify-content-center header-row p-1">
     @foreach (var p in Cakes)
     {
-        <MudItem>
+         <MudItem>
             <ProductCard Title="@p.Name"
                          Image="@p.Image"
                          Price="@p.Price"
@@ -18,7 +18,7 @@
 
     List<Cake> Cakes = new()
     {
-        new Cake { Name="تشيز كيك", Price=50, OldPrice=70, Image="images/cheesecake.jpg"},
+        new Cake { Name="تشيز كيك", Price=50, OldPrice=70, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecake.jpg"},
         new Cake { Name="ديسباسيتو كبير", Price=120, OldPrice=150, Image="images/dispacetolarge.jpg"},
         new Cake { Name="ديسباسيتو وسط", Price=90, OldPrice=120, Image="images/dispacetomedium.jpg"},
         new Cake { Name="ديسباسيتو صغير", Price=60, OldPrice=80, Image="images/dispacetosmall.jpg"},
