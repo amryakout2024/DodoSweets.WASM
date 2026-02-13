@@ -1,11 +1,12 @@
 ﻿@inject MudBlazor.ISnackbar Snackbar
+@inject NavigationManager Nav
 
 <MudCard Style="width:220px;background-color:whitesmoke">
     <MudCardMedia Image="@Image" Style="background-size:cover;background-position:top;margin-bottom:30px" Height="170"/>
 
     <MudCardContent Style="padding:0px">
         <MudText Typo="Typo.subtitle2" Align="Align.Center">
-            @Title
+            @Name
         </MudText>
 
         <MudStack Row="true" Justify="Justify.Center" Spacing="1">
@@ -32,9 +33,9 @@
 @code {
 
     [Parameter] 
-        public string Title { get; set; }
+        public string? Name { get; set; }
     [Parameter] 
-        public string Image { get; set; }
+        public string? Image { get; set; }
     [Parameter] 
         public decimal Price { get; set; }
     [Parameter] 
@@ -42,6 +43,8 @@
 
     void AddToCart()
     {
-        Snackbar.Add("Operation successful!", Severity.Success);
+        Nav.NavigateTo($"/item/{Name}");
+
+        // Snackbar.Add("Operation successful!", Severity.Success);
     }
 }

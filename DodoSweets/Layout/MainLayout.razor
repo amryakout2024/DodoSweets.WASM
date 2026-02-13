@@ -7,27 +7,30 @@
 <MudScrollToTop/>
  *@
 
-<MudThemeProvider />
-<MudPopoverProvider />
-<MudDialogProvider />
-<MudSnackbarProvider />
-<MudScrollToTop />
+<MudRTLProvider RightToLeft="@_isRtl">
+    <MudThemeProvider />
+    <MudPopoverProvider />
+    <MudDialogProvider />
+    <MudSnackbarProvider />
+    <MudScrollToTop />
 
+    <Header />
 
-<Header />
+    <MudLayout>
 
-<MudLayout>
+        <MudMainContent>
 
-    <MudMainContent>
+            @Body
 
-        @Body
+        </MudMainContent>
+    </MudLayout>
 
-    </MudMainContent>
-</MudLayout>
+    <Footer />
+</MudRTLProvider>
 
-<Footer />
-
-
+@code {
+    private bool _isRtl = true; // Set to true for RTL, false for LTR
+}
 @* <div class="page">
     <div class="sidebar">
         <NavMenu />

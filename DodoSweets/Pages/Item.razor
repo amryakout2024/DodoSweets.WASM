@@ -1,0 +1,41 @@
+﻿@page "/item/{Name}"
+@using DodoSweets.Models
+
+<MudContainer Class="mt-4">
+    @if (cake == null)
+    {
+        <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+    }
+    else
+    {
+        <MudCard Elevation="3">
+            <MudCardHeader>
+                <CardHeaderContent>
+                    <MudText Typo="Typo.h5" Style="text-align:center">@cake.Name</MudText>
+                </CardHeaderContent>
+            </MudCardHeader>
+
+            <MudCardMedia Image="@cake.Image" Style="background-size:contain;background-position:top;margin-bottom:30px" />
+
+            <MudCardContent>
+                <MudText Typo="Typo.body1">@cake.Description</MudText>
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary" href="/">Back to List</MudButton>
+            </MudCardActions>
+        </MudCard>
+    }
+</MudContainer>
+
+@code {
+
+    [Parameter]
+    public string? Name { get; set; }
+
+    Cake cake = new();
+
+    protected override void OnInitialized()
+    {
+        cake = Home.Cakes.Where(x => x.Name == Name).FirstOrDefault()??new Cake();
+    }
+}
