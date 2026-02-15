@@ -7,16 +7,17 @@
     text-transform: uppercase;
 }
 
-    .frame-title::after {
-        content: "";
-        position: absolute;
-        width: 60px;
-        height: 2px;
-        background-color:gold ;
-        margin: 7px -100px auto 5px;
-        margin-right: -100px;
-        border-radius: 2px;
-    }
+.frame-title::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color:gold ;
+    margin-top:7px;
+    margin-right: 7px;
+    border-radius: 2px;
+}
+
 .frame-body {
     color: darkslateblue;
     text-align: start;

@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using DodoSweets.Models
+@using System.Collections.ObjectModel
 
 <PageTitle>Home</PageTitle>
 
@@ -19,7 +20,7 @@
 
     public static string githubUrl = "https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/";
 
-    public static List<Cake> Cakes = new()
+    public static ObservableCollection<Cake> Cakes = new()
     {  
         new Cake { Name="ديسباسيتو شوكليت حجم كبير", Price= 100, OldPrice= 120, Image=$"{githubUrl}dispacetochocolatelarge.jpg",Description="طبقتين من كيك الشوكولاته وطبقتين شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته"},
         new Cake { Name="ديسباسيتو شوكليت حجم وسط", Price= 40, OldPrice= 50, Image=$"{githubUrl}dispacetochocolatemedium.jpg",Description="طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته"},

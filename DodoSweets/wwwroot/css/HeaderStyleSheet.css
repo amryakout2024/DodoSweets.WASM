@@ -32,3 +32,14 @@
         width: 80px
     }
 }
+
+/* Targets the inner input element for alignment */
+.custom-mud-input .mud-input {
+    text-align: center !important;
+    height:45px;
+}
+
+/* Apply only to fields with this specific class */
+.custom-radius .mud-input-outlined-border {
+    border-radius: 15px !important;
+}

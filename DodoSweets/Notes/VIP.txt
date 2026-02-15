@@ -3,3 +3,22 @@ dotnet restore
 dotnet publish -c release
 
 bs grid col fix mudblazor resposiveness issue
+
+@*             <MudBadge Color="Color.Primary" Style="height:10px"
+                      Content="0" Overlap="true" Variant="Variant.Filled">
+                <MudIcon Style="color:deeppink"
+                         Icon="@Icons.Material.Rounded.FavoriteBorder" Size="Size.Medium" />
+            </MudBadge>
+ *@
+
+
+ @inject ProtectedLocalStorage BrowserStorage
+
+async Task SaveTheme(string themeName) {
+    await BrowserStorage.SetAsync("userTheme", themeName);
+}
+
+async Task<string> LoadTheme() {
+    var result = await BrowserStorage.GetAsync<string>("userTheme");
+    return result.Success ? result.Value : "light";
+}
