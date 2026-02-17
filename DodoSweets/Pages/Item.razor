@@ -1,7 +1,7 @@
 ﻿@page "/item/{Name}"
 @using DodoSweets.Models
 
-<MudContainer Class="mt-4">
+<MudContainer Class="mt-5">
 
     @if (cake == null)
     {
@@ -20,6 +20,10 @@
 
             <MudCardContent>
                 <MudText Typo="Typo.body1">@cake.Description</MudText>
+                <MudText Color="Color.Error" Typo="Typo.h6">
+                    @cake.Price ج
+                </MudText>
+
             </MudCardContent>
             <MudCardActions>
                 <MudButton Variant="Variant.Text" Style="font-size:16px" Color="Color.Primary" href="/">عودة إلي القائمة</MudButton>

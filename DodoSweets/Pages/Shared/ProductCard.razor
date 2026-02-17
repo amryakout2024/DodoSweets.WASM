@@ -5,20 +5,20 @@
     <MudCardMedia Image="@Image" Style="background-size:cover;background-position:top;margin-bottom:30px" Height="170"/>
 
     <MudCardContent Style="padding:0px">
-        <MudText Typo="Typo.subtitle2" Align="Align.Center">
+        <MudText Typo="Typo.subtitle1" Align="Align.Center">
             @Name
         </MudText>
 
-        <MudStack Row="true" Justify="Justify.Center" Spacing="1">
+        <MudText Align="Align.Center" Color="Color.Error" Typo="Typo.h6">
+            @Price ج
+        </MudText>
+
+@*         <MudStack Row="true" Justify="Justify.Center" Spacing="1">
             <MudText Color="Color.Default" Style="text-decoration:line-through">
                 @OldPrice ج
             </MudText>
-
-            <MudText Color="Color.Error" Typo="Typo.h6">
-                @Price ج
-            </MudText>
         </MudStack>
-    </MudCardContent>
+ *@    </MudCardContent>
 
     <MudCardActions>
         <MudButton Variant="Variant.Filled"
