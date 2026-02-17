@@ -8,29 +8,31 @@
 inject IOptions<ContactInfoOptions> ContactInfoOptions
  *@
 
-<MudGrid 
-    Spacing="1"
-    Class="container-fluid d-flex align-items-center p-3" 
-    Style="position:fixed;top:0;z-index:1;background-color:white;height:115px">
+<div 
+    class="container-fluid d-flex align-items-center p-3
+        justify-content-around" 
+    style="position:fixed;top:0;z-index:1;background-color:white;height:115px">
+    
+    <MudImage src="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dodoslogo.jpg" Class="d-block header-logo" alt="Dodo's Cakes Logo" />
+    
+    <MudStack Spacing="5" Row="true" Class="d-flex justify-content-center">
+        <MudIcon Style="color:deeppink"
+                 Icon="@Icons.Material.Filled.SupportAgent" Size="Size.Medium" />
 
-    <MudItem xs="6" Class="d-flex col-md-3 justify-content-center order-0">
-        <MudImage src="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dodoslogo.jpg" Class="d-block header-logo" alt="Dodo's Cakes Logo" />
+        <MudText Style="color:deeppink;font-size:12px">English</MudText>
+
+    </MudStack>
+
+@*     <MudItem xs="6" Class="d-flex col-md-3 justify-content-center">
     </MudItem>
+ *@
+@*     <MudItem xs="6" Class="container d-flex col-md-3 align-items-center justify-content-center">
 
-    <MudItem xs="6" Class="container d-flex col-md-3 align-items-center  order-1 order-md-2 justify-content-center">
-
-        <MudStack Spacing="5" Row="true" Class="d-flex justify-content-center">
-            <MudIcon Style="color:deeppink"
-                     Icon="@Icons.Material.Filled.SupportAgent" Size="Size.Medium" />
-
-            <MudText Style="color:deeppink;font-size:12px">English</MudText>
-        
-        </MudStack>
    
     </MudItem>
+ *@
 
-
-</MudGrid>
+</div>
 
 @code {
 

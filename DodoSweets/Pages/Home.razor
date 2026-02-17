@@ -7,9 +7,9 @@
 
 <div style="display:flex;justify-content:center;
         width:100%;
-        position:fixed;top:110px;z-index:1;
+        position:fixed;top:110px;z-index:1;padding-bottom:20px;
         background-color:white">
-    <MudAutocomplete T="Cake" Style="width:65%;justify-content:center"
+    <MudAutocomplete T="Cake" Style="width:60%;justify-content:center"
                      FullWidth="true" Class="mx-auto"
         Label="بحث"
         Value="selectedCake"
@@ -31,7 +31,7 @@
     </MudAutocomplete>
 </div>
 <MudGrid Spacing="3" Class="container-fluid d-flex justify-content-center p-1"
-Style="margin-top:75px !important">
+Style="margin-top:90px !important">
     <MudItem Style="position:fixed;top:0">
     </MudItem>
 
@@ -106,7 +106,7 @@ Style="margin-top:75px !important">
 
         new Cake { Name="تشيز كيك توت", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakeberry.jpg",Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص التوت"},
         new Cake { Name="تشيز كيك فراولة", Price=75 , OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakestrawberry.jpg",Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص الفراوله"},
-        new Cake { Name="تشيز كيك ميكس توت و فراولة", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg",Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص ميكس فراوله وتوت"},
+        new Cake { Name="تشيز كيك ميكس توت و فراولة", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakemix.jpg",Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص ميكس فراوله وتوت"},
 
         new Cake { Name="ريد فيلفيت", Price=70 , OldPrice=90 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/redvelvet.jpg",Description="طبقتين من الكيك المخملي مع طبقتين من كريمه الجبنه"},
         new Cake { Name="براونيز بعين الجمل", Price=50 , OldPrice=60 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/brawnesjamal.jpg",Description="كيك غني بالشوكولاته مع عين الجمل مزينة بصوص الشوكولاته"},
@@ -115,26 +115,3 @@ Style="margin-top:75px !important">
     };
 
 }
-@* <MudItem xs="12"
-         Class="d-flex col-md-6 m-3 m-md-0 align-items-center order-2 order-md-1">
-    <MudAutocomplete T="Cake" Style="position:fixed;top:0"
-                     Label="بحث"
-                     Value="selectedCake"
-                     ValueChanged="OnCakeSelected"
-                     SearchFunc="@Search"
-                     ToStringFunc="@(c => c?.Name)"
-                     AdornmentIcon="@Icons.Material.Filled.Search"
-                     AdornmentColor="Color.Primary"
-                     ResetValueOnEmptyText="@resetValueOnEmptyText"
-                     CoerceText="@coerceText"
-                     CoerceValue="@coerceValue"
-                     SelectValueOnTab="@selectedOnTab">
-        <ItemTemplate Context="cake">
-            <div style="display:flex; align-items:center; gap:10px;">
-                <MudImage Src="@cake.Image" Style="height:50px;background-size:contain" />
-                <span>@cake.Name</span>
-            </div>
-        </ItemTemplate>
-    </MudAutocomplete>
-</MudItem>
- *@
