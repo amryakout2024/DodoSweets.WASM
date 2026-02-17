@@ -1,5 +1,19 @@
 ﻿body {
 }
+
+/*.autocomplete-width {
+    width:75%*/
+/*    padding: 0px 100px 20px 100px;
+*//*}
+
+@media (min-width: 992px) {
+    .autocomplete-padding {
+        padding: 0px 300px 20px 300px;
+    }
+}*/
+
+
+
 /** my Style ***/
 .anchor-style {
     color: white
