@@ -2,6 +2,7 @@
 @using DodoSweets.Models
 @using System.Collections.ObjectModel
 @inject NavigationManager Nav
+@inject IStringLocalizer<AppResource> Loc
 
 <PageTitle>Home</PageTitle>
 
@@ -11,7 +12,7 @@
         background-color:white">
     <MudAutocomplete T="Cake" Style="width:60%;justify-content:center"
                      FullWidth="true" Class="mx-auto"
-        Label="بحث"
+        Label="@Loc["search"]"
         Value="selectedCake"
         ValueChanged="OnCakeSelected"
         SearchFunc="@Search"
@@ -47,6 +48,7 @@ Style="margin-top:90px !important">
  </MudGrid>
 
     @code {
+
     private bool resetValueOnEmptyText;
     private bool coerceText;
     private bool coerceValue;
@@ -54,29 +56,8 @@ Style="margin-top:90px !important">
 
     private Cake? selectedCake;
 
-    private async Task OnCakeSelected(Cake cake)
-    {
-        if (cake != null)
-        {
-            await Task.Delay(3);
-
-            // Navigate to the product details page using the cake's name as a parameter
-            Nav.NavigateTo($"/item/{cake.Name}");
-        }
-    }
-    private async Task<IEnumerable<Cake>> Search(string value, CancellationToken token)
-    {
-        // In real life use an asynchronous function for fetching data from an api.
-        await Task.Delay(3, token);
-
-        // if text is null or empty, show complete list
-        if (string.IsNullOrEmpty(value))
-            return Home.Cakes;
-        return Home.Cakes.Where(x => x.Name.Contains(value, StringComparison.InvariantCultureIgnoreCase));
-    }
-
     public static ObservableCollection<Cake> Cakes = new()
-    {  
+    {
         new Cake { Name="ديسباسيتو شوكليت حجم كبير", Price= 100, OldPrice= 120, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatelarge.jpg",Description="طبقتين من كيك الشوكولاته وطبقتين شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته"},
         new Cake { Name="ديسباسيتو شوكليت حجم وسط", Price= 40, OldPrice= 50, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatemedium.jpg",Description="طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته"},
         new Cake { Name="ديسباسيتو شوكليت حجم صغير", Price= 30, OldPrice= 35, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatesmall.jpg",Description="طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته"},
@@ -113,5 +94,28 @@ Style="margin-top:90px !important">
         new Cake { Name="تورته بلاك فورست مقاس 14 سم", Price=250 , OldPrice=260 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/tortablackforest.jpg",Description="طبقتين من كيك الشوكولاته الإسفنجي وطبقتين من كريمه الشوكولاته ومزينه بالكريز"},
 
     };
+
+
+    private async Task OnCakeSelected(Cake cake)
+    {
+        if (cake != null)
+        {
+            await Task.Delay(3);
+
+            // Navigate to the product details page using the cake's name as a parameter
+            Nav.NavigateTo($"/item/{cake.Name}");
+        }
+    }
+    private async Task<IEnumerable<Cake>> Search(string value, CancellationToken token)
+    {
+        // In real life use an asynchronous function for fetching data from an api.
+        await Task.Delay(3, token);
+
+        // if text is null or empty, show complete list
+        if (string.IsNullOrEmpty(value))
+            return Home.Cakes;
+        return Home.Cakes.Where(x => x.Name.Contains(value, StringComparison.InvariantCultureIgnoreCase));
+    }
+
 
 }

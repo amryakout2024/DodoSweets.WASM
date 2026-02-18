@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LoginPageTitle" xml:space="preserve">
+    <value>Easy way for weight loss</value>
+  </data>
+  <data name="RegexValidationMessage" xml:space="preserve">
+    <value>error</value>
+  </data>
+  <data name="LoginPageLabelAddNewMembership" xml:space="preserve">
+    <value>register for new</value>
+  </data>
+  <data name="LoginPageLabelHaveNoMembership" xml:space="preserve">
+    <value>If you don't have membership </value>
+  </data>
+  <data name="Rememberme" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="LoginPageButtonLogin" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="Currentweight" xml:space="preserve">
+    <value>Current weight</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UpdatePassword" xml:space="preserve">
+    <value>Update Password</value>
+  </data>
+  <data name="SelectBodyActivity" xml:space="preserve">
+    <value>Select Body Activity</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Foods" xml:space="preserve">
+    <value>Foods</value>
+  </data>
+  <data name="Mymeals" xml:space="preserve">
+    <value>My meals</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>Cart</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Welcomeback" xml:space="preserve">
+    <value>Welcome back</value>
+  </data>
+  <data name="Bodymassanalysis" xml:space="preserve">
+    <value>Body mass analysis</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Bodymassindex" xml:space="preserve">
+    <value>Body mass index (BMI)</value>
+  </data>
+  <data name="Idealweight" xml:space="preserve">
+    <value>Ideal weight</value>
+  </data>
+  <data name="Modifiedweight" xml:space="preserve">
+    <value>Modified weight</value>
+  </data>
+  <data name="Bodyactivity" xml:space="preserve">
+    <value>Body activity</value>
+  </data>
+  <data name="Totalenergy" xml:space="preserve">
+    <value>Total energy</value>
+  </data>
+  <data name="Currentregieme" xml:space="preserve">
+    <value>Current regieme</value>
+  </data>
+  <data name="Showall" xml:space="preserve">
+    <value>Show all</value>
+  </data>
+  <data name="Noregiemetillnow" xml:space="preserve">
+    <value>No regieme till now !</value>
+  </data>
+  <data name="Startregieme" xml:space="preserve">
+    <value>Start regieme</value>
+  </data>
+  <data name="Newmembership" xml:space="preserve">
+    <value>New membership</value>
+  </data>
+  <data name="Birthdate" xml:space="preserve">
+    <value>Birth date</value>
+  </data>
+  <data name="Waistcircumference" xml:space="preserve">
+    <value>Waist circumference</value>
+  </data>
+  <data name="Obesitydegree" xml:space="preserve">
+    <value>Obesity degree</value>
+  </data>
+  <data name="Waistcircumferenceevaluation" xml:space="preserve">
+    <value>Waist circumference evaluation</value>
+  </data>
+  <data name="Slimwaste" xml:space="preserve">
+    <value>Slim waste</value>
+  </data>
+  <data name="Editprofile" xml:space="preserve">
+    <value>Edit profile</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Termsandconditions" xml:space="preserve">
+    <value>Terms and conditions</value>
+  </data>
+  <data name="Contactus" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="Doyouliketheapp" xml:space="preserve">
+    <value>Do you like the app?</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version 1.5.1</value>
+  </data>
+  <data name="Editmembership" xml:space="preserve">
+    <value>Edit membership</value>
+  </data>
+  <data name="Diets" xml:space="preserve">
+    <value>Diets</value>
+  </data>
+  <data name="Ketodiet" xml:space="preserve">
+    <value>Keto diet</value>
+  </data>
+  <data name="Ketodescription" xml:space="preserve">
+    <value>The keto diet is a low-carb, high-fat diet that helps the body enter ketosis, where it burns fat for energy instead of carbs. It includes foods like meat, eggs, cheese, oils, and non-starchy vegetables, while avoiding bread, sugar, pasta, and most fruits. Benefits include weight loss and steady energy. Some may experience side effects like fatigue or headache at first.</value>
+  </data>
+  <data name="Lowcarbdiet" xml:space="preserve">
+    <value>Low carb diet</value>
+  </data>
+  <data name="Lowcarbdescription" xml:space="preserve">
+    <value>A low-calorie diet limits daily calorie intake, typically between 1200–1800 calories, to support weight loss and improve overall health. It emphasizes nutrient-rich foods like vegetables, fruits, lean proteins, and whole grains, while reducing sugars, fried foods, and processed snacks. This diet helps create a calorie deficit, which encourages the body to burn stored fat. For best results, it should be balanced to provide essential nutrients and may be adjusted based on age, activity level, and health goals.</value>
+  </data>
+  <data name="Servingsizediet" xml:space="preserve">
+    <value>Serving size diet</value>
+  </data>
+  <data name="Servingsizedescription" xml:space="preserve">
+    <value>The Serving Size Diet involves controlling portion sizes of different food groups to maintain a balanced diet and avoid overeating. Each food group has a defined serving size, such as 30g of protein (e.g., chicken), 1 cup of vegetables, or ½ cup of grains. This system helps regulate calorie intake while ensuring the body gets the necessary nutrients. It's commonly used for weight management, promoting healthy eating habits, and creating sustainable, balanced meals.</value>
+  </data>
+  <data name="Prepareyourfavoritemeal" xml:space="preserve">
+    <value>Prepare your favorite meal</value>
+  </data>
+  <data name="Meal" xml:space="preserve">
+    <value>Meal</value>
+  </data>
+  <data name="Breakfast" xml:space="preserve">
+    <value>Breakfast</value>
+  </data>
+  <data name="Lunch" xml:space="preserve">
+    <value>Lunch</value>
+  </data>
+  <data name="Dinner" xml:space="preserve">
+    <value>Dinner</value>
+  </data>
+  <data name="Caloriescalculatedforeach100gm" xml:space="preserve">
+    <value>Calories calculated for each 100 gm</value>
+  </data>
+  <data name="Writefoodname" xml:space="preserve">
+    <value>Write food name</value>
+  </data>
+  <data name="Writereadymealname" xml:space="preserve">
+    <value>Write ready meal name</value>
+  </data>
+  <data name="Nofoodbythisname" xml:space="preserve">
+    <value>No food by this name !</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Calories" xml:space="preserve">
+    <value>Calories</value>
+  </data>
+  <data name="Carbohydrates" xml:space="preserve">
+    <value>Carbohydrates</value>
+  </data>
+  <data name="Protiens" xml:space="preserve">
+    <value>Protiens</value>
+  </data>
+  <data name="Fats" xml:space="preserve">
+    <value>Fats</value>
+  </data>
+  <data name="Fibers" xml:space="preserve">
+    <value>Fibers</value>
+  </data>
+  <data name="Addfoodtomealcart" xml:space="preserve">
+    <value>Add food to meal cart</value>
+  </data>
+  <data name="Addquantity" xml:space="preserve">
+    <value>Add quantity</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Updatedsuccessfully" xml:space="preserve">
+    <value>Updated successfully</value>
+  </data>
+  <data name="Deletedsuccessfully" xml:space="preserve">
+    <value>Deleted successfully</value>
+  </data>
+  <data name="Addedsuccessfully" xml:space="preserve">
+    <value>Added successfully</value>
+  </data>
+  <data name="Addnewfood" xml:space="preserve">
+    <value>Add new FoodKetoAr</value>
+  </data>
+  <data name="Foodname" xml:space="preserve">
+    <value>Food name</value>
+  </data>
+  <data name="Clearall" xml:space="preserve">
+    <value>Clear all</value>
+  </data>
+  <data name="Mealcomponents" xml:space="preserve">
+    <value>Meal components</value>
+  </data>
+  <data name="Mealcalories" xml:space="preserve">
+    <value>Meal calories</value>
+  </data>
+  <data name="Nofoodsinthecart" xml:space="preserve">
+    <value>No foods in the cart !</value>
+  </data>
+  <data name="Grams" xml:space="preserve">
+    <value>Grams</value>
+  </data>
+  <data name="Mealnameexistsbefore" xml:space="preserve">
+    <value>Meal name exists before</value>
+  </data>
+  <data name="Noitemstobeadded" xml:space="preserve">
+    <value>No items to be added !</value>
+  </data>
+  <data name="Createonedayplan" xml:space="preserve">
+    <value>Create one day plan</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Mealname" xml:space="preserve">
+    <value>Meal name</value>
+  </data>
+  <data name="Mealtype" xml:space="preserve">
+    <value>Meal type</value>
+  </data>
+  <data name="Totalcalories" xml:space="preserve">
+    <value>Total calories</value>
+  </data>
+  <data name="Totalcarbohydrates" xml:space="preserve">
+    <value>Total carbohydrates</value>
+  </data>
+  <data name="Totalprotiens" xml:space="preserve">
+    <value>Total protiens</value>
+  </data>
+  <data name="Totalfats" xml:space="preserve">
+    <value>Total fats</value>
+  </data>
+  <data name="Totalfibers" xml:space="preserve">
+    <value>Total fibers</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="Daycalories" xml:space="preserve">
+    <value>Day calories</value>
+  </data>
+  <data name="Targetedweight" xml:space="preserve">
+    <value>Targeted weight</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Consumedcalories" xml:space="preserve">
+    <value>Consumed calories</value>
+  </data>
+  <data name="Remainingcalories" xml:space="preserve">
+    <value>Remaining calories</value>
+  </data>
+  <data name="Diettype" xml:space="preserve">
+    <value>Diet type</value>
+  </data>
+  <data name="Nodietselected" xml:space="preserve">
+    <value>No diet selected</value>
+  </data>
+  <data name="Setasdefaultfornextdays" xml:space="preserve">
+    <value>Set as default for next days</value>
+  </data>
+  <data name="Selectdiettype" xml:space="preserve">
+    <value>Select diet</value>
+  </data>
+  <data name="Snaks" xml:space="preserve">
+    <value>Snaks</value>
+  </data>
+  <data name="Existingitem" xml:space="preserve">
+    <value>Existing item</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Noitemstodisplay" xml:space="preserve">
+    <value>No items to display !</value>
+  </data>
+  <data name="Nutritionfacts" xml:space="preserve">
+    <value>Nutrition facts</value>
+  </data>
+  <data name="Mealsize" xml:space="preserve">
+    <value>Meal size</value>
+  </data>
+  <data name="Gram" xml:space="preserve">
+    <value>Grams</value>
+  </data>
+  <data name="Gm" xml:space="preserve">
+    <value>gm</value>
+  </data>
+  <data name="Consumed" xml:space="preserve">
+    <value>Consumed</value>
+  </data>
+  <data name="Pleaseselectdiettype" xml:space="preserve">
+    <value>Please select diet type</value>
+  </data>
+  <data name="Ifyouchangeddiettypeallmealswillbedeletedrelatedtothisday" xml:space="preserve">
+    <value>If you changed diet type ,all meals will be deleted related to this day</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Tables" xml:space="preserve">
+    <value>Tables</value>
+  </data>
+  <data name="Previousdays" xml:space="preserve">
+    <value>Previous days</value>
+  </data>
+  <data name="Nextdays" xml:space="preserve">
+    <value>Next days</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="NeedLogintousetheapp" xml:space="preserve">
+    <value>Need Login to use the app !</value>
+  </data>
+  <data name="Wanttostartyourchallenge" xml:space="preserve">
+    <value>Want to start your challenge ?</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Emailorpasswordisnotcorrect" xml:space="preserve">
+    <value>Email or password is not correct</value>
+  </data>
+  <data name="Membershipregisteredsuccessfully" xml:space="preserve">
+    <value>Membership registered successfully</value>
+  </data>
+  <data name="Emailexistsbefore" xml:space="preserve">
+    <value>Email exists before</value>
+  </data>
+  <data name="Loginregister" xml:space="preserve">
+    <value>Login / Register</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Deletethemeal" xml:space="preserve">
+    <value>Delete the meal</value>
+  </data>
+  <data name="Savemealbyname" xml:space="preserve">
+    <value>Save meal by name</value>
+  </data>
+  <data name="Cal" xml:space="preserve">
+    <value>cal</value>
+  </data>
+  <data name="Carb" xml:space="preserve">
+    <value>Carb</value>
+  </data>
+  <data name="Savemealbynametouseitagainasreadymeal" xml:space="preserve">
+    <value>Save meal by name to use it again as ready meal</value>
+  </data>
+  <data name="Enternameforyourfavouritemeal" xml:space="preserve">
+    <value>Enter name for your the meal</value>
+  </data>
+  <data name="Updatethenameofthemeal" xml:space="preserve">
+    <value>Update the name of the meal</value>
+  </data>
+  <data name="Enternewnameforyourfavouritemeal" xml:space="preserve">
+    <value>Enter new name for your the meal</value>
+  </data>
+  <data name="Savedsuccessfully" xml:space="preserve">
+    <value>Saved successfully</value>
+  </data>
+  <data name="Per" xml:space="preserve">
+    <value>Per</value>
+  </data>
+  <data name="Nutritions" xml:space="preserve">
+    <value>Nutritions</value>
+  </data>
+  <data name="Readymeals" xml:space="preserve">
+    <value>Ready meals</value>
+  </data>
+  <data name="Mealdate" xml:space="preserve">
+    <value>Meal date</value>
+  </data>
+  <data name="Readymeal" xml:space="preserve">
+    <value>Ready meal</value>
+  </data>
+  <data name="Mytables" xml:space="preserve">
+    <value>My tables</value>
+  </data>
+  <data name="CalFit" xml:space="preserve">
+    <value>CalFit</value>
+  </data>
+  <data name="Clickagaintoexit" xml:space="preserve">
+    <value>Click again to exit</value>
+  </data>
+  <data name="Pleasefillallfields" xml:space="preserve">
+    <value>Please fill all fields</value>
+  </data>
+  <data name="Cannotregister" xml:space="preserve">
+    <value>Can not register</value>
+  </data>
+  <data name="doyouforgotyourpassword" xml:space="preserve">
+    <value>do you forgot your password ?</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="Recoveryourpassword" xml:space="preserve">
+    <value>Recover your password</value>
+  </data>
+  <data name="Passwordsenttoyouremail" xml:space="preserve">
+    <value>Password sent to your email</value>
+  </data>
+  <data name="Emailisnotcorrect" xml:space="preserve">
+    <value>Email is not correct</value>
+  </data>
+  <data name="EntertheconfirmationOTPthatsenttoyouremail" xml:space="preserve">
+    <value>Enter the confirmation OTP that sent to your email</value>
+  </data>
+  <data name="didnotreceviedtheOTP" xml:space="preserve">
+    <value>did not recevied the OTP?</value>
+  </data>
+  <data name="OTPwithin" xml:space="preserve">
+    <value>OTP within</value>
+  </data>
+  <data name="Sendagain" xml:space="preserve">
+    <value>Send again</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="OTPsent" xml:space="preserve">
+    <value>OTP sent</value>
+  </data>
+  <data name="OTPresentagain" xml:space="preserve">
+    <value>OTP resent again</value>
+  </data>
+  <data name="OTPisnotcorrect" xml:space="preserve">
+    <value>OTP is not correct</value>
+  </data>
+  <data name="Checkyourinternetconnection" xml:space="preserve">
+    <value>Check your internet connection !</value>
+  </data>
+  <data name="Tryagain" xml:space="preserve">
+    <value>TRY AGAIN</value>
+  </data>
+  <data name="Sureyouwanttologout" xml:space="preserve">
+    <value>Sure you want to logout ?</value>
+  </data>
+  <data name="Nointernetconnection" xml:space="preserve">
+    <value>No internet connection !</value>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="Oldpassword" xml:space="preserve">
+    <value>Old password</value>
+  </data>
+  <data name="Newpassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="Newpasswordagain" xml:space="preserve">
+    <value>New password again</value>
+  </data>
+  <data name="Oldpasswordisnotcorrect" xml:space="preserve">
+    <value>Old password is not correct</value>
+  </data>
+  <data name="Profilepage" xml:space="preserve">
+    <value>Profile page</value>
+  </data>
+  <data name="Bothnewpasswordsarenotidentical" xml:space="preserve">
+    <value>Both new passwords are not identical</value>
+  </data>
+  <data name="Deleteaccount" xml:space="preserve">
+    <value>Delete account</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="Notvalidtillnow" xml:space="preserve">
+    <value>Not valid till now</value>
+  </data>
+  <data name="Internetaccessislimited" xml:space="preserve">
+    <value>Internet access is limited</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="dispacetochocolatelarge" xml:space="preserve">
+    <value>Dispaceto chocolate large</value>
+  </data>
+</root>

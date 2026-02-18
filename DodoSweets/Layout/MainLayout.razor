@@ -1,13 +1,7 @@
-﻿@inherits LayoutComponentBase
+﻿@using Microsoft.Extensions.Localization
+@inherits LayoutComponentBase
 
-@* <MudThemeProvider />
-<MudPopoverProvider />
-<MudDialogProvider />
-<MudSnackbarProvider />
-<MudScrollToTop/>
- *@
-
-<MudRTLProvider RightToLeft="@_isRtl">
+<MudRTLProvider RightToLeft="@(CultureInfo.CurrentCulture.Name.StartsWith("ar") ? true : false)">
     <MudThemeProvider />
     <MudPopoverProvider />
     <MudDialogProvider />

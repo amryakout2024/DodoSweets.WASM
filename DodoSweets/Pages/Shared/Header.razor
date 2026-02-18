@@ -1,12 +1,12 @@
 ﻿@using DodoSweets.Models
 @using Microsoft.Extensions.Options
 @using System.Collections.ObjectModel
+@inject IJSRuntime JS
+@inject NavigationManager Nav
+@inject IStringLocalizer<AppResource> Loc
 
 //make pages navigation in blaz
 
-@* implements IDisposable
-inject IOptions<ContactInfoOptions> ContactInfoOptions
- *@
 
 <div 
     class="container-fluid d-flex align-items-center p-3
@@ -19,22 +19,23 @@ inject IOptions<ContactInfoOptions> ContactInfoOptions
         <MudIcon Style="color:deeppink"
                  Icon="@Icons.Material.Filled.SupportAgent" Size="Size.Medium" />
 
-        <MudText Style="color:deeppink;font-size:12px">English</MudText>
+        <MudText Style="color:deeppink;font-size:12px">@Loc["Lang"]</MudText>
 
     </MudStack>
-
-@*     <MudItem xs="6" Class="d-flex col-md-3 justify-content-center">
-    </MudItem>
- *@
-@*     <MudItem xs="6" Class="container d-flex col-md-3 align-items-center justify-content-center">
-
-   
-    </MudItem>
- *@
-
 </div>
 
 @code {
+
+    protected override void OnInitialized()
+    {
+        var d = Loc["Lang"];
+    }
+    private async Task ChangeLanguage(string culture)
+    {
+        await JS.InvokeVoidAsync("localStorage.setItem", "BlazorCulture", culture);
+        // WASM requires a reload to apply the new CultureInfo to the thread
+        Nav.NavigateTo(Nav.Uri, forceLoad: true);
+    }
 
 }
 
