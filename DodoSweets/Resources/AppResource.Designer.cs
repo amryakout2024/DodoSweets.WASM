@@ -115,6 +115,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All rights reserved.
+        /// </summary>
+        public static string allrightsreserved {
+            get {
+                return ResourceManager.GetString("allrightsreserved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Birth date.
         /// </summary>
         public static string Birthdate {
@@ -286,6 +295,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Company.
+        /// </summary>
+        public static string company {
+            get {
+                return ResourceManager.GetString("company", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirm.
         /// </summary>
         public static string Confirm {
@@ -403,6 +421,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delicious sweets and cakes.
+        /// </summary>
+        public static string Delicioussweetsandcakes {
+            get {
+                return ResourceManager.GetString("Delicioussweetsandcakes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to did not recevied the OTP?.
         /// </summary>
         public static string didnotreceviedtheOTP {
@@ -448,6 +475,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dodo’s sweets.
+        /// </summary>
+        public static string dodossweets {
+            get {
+                return ResourceManager.GetString("dodossweets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to do you forgot your password ?.
         /// </summary>
         public static string doyouforgotyourpassword {
@@ -489,6 +525,15 @@ namespace DodoSweets.Resources {
         public static string Editprofile {
             get {
                 return ResourceManager.GetString("Editprofile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El mahalla el kubra.
+        /// </summary>
+        public static string elmahallaelkubra {
+            get {
+                return ResourceManager.GetString("elmahallaelkubra", resourceCulture);
             }
         }
         
@@ -727,7 +772,7 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to English.
+        ///   Looks up a localized string similar to عربي.
         /// </summary>
         public static string Lang {
             get {
@@ -741,6 +786,15 @@ namespace DodoSweets.Resources {
         public static string Language {
             get {
                 return ResourceManager.GetString("Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LE.
+        /// </summary>
+        public static string le {
+            get {
+                return ResourceManager.GetString("le", resourceCulture);
             }
         }
         
@@ -1213,6 +1267,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Privacy policy.
+        /// </summary>
+        public static string privacypolicy {
+            get {
+                return ResourceManager.GetString("privacypolicy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Profile page.
         /// </summary>
         public static string Profilepage {
@@ -1650,6 +1713,15 @@ namespace DodoSweets.Resources {
         public static string Welcomeback {
             get {
                 return ResourceManager.GetString("Welcomeback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Who are us.
+        /// </summary>
+        public static string Whoareus {
+            get {
+                return ResourceManager.GetString("Whoareus", resourceCulture);
             }
         }
         

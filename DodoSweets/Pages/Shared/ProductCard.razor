@@ -1,5 +1,6 @@
 ﻿@inject MudBlazor.ISnackbar Snackbar
 @inject NavigationManager Nav
+@inject IStringLocalizer<AppResource> Loc
 
 <MudCard Style="width:220px;background-color:whitesmoke">
     <MudCardMedia Image="@Image" Style="background-size:cover;background-position:top;margin-bottom:30px" Height="170"/>
@@ -10,7 +11,7 @@
         </MudText>
 
         <MudText Align="Align.Center" Color="Color.Error" Typo="Typo.h6">
-            @Price ج
+            @Price @Loc["le"]
         </MudText>
 
 @*         <MudStack Row="true" Justify="Justify.Center" Spacing="1">
@@ -25,7 +26,7 @@
                    Color="Color.Primary"
                    FullWidth="true" 
                    onclick="@AddToCart">
-            عرض
+            @Loc["Show"]
         </MudButton>
     </MudCardActions>
 </MudCard>

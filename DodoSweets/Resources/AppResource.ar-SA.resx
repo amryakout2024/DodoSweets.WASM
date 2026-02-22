@@ -649,9 +649,33 @@
     <value>الانترنت محدود</value>
   </data>
   <data name="Lang" xml:space="preserve">
-    <value>عربي</value>
+    <value>English</value>
   </data>
   <data name="dispacetochocolatelarge" xml:space="preserve">
     <value>ديسباسيتو شوكليت حجم كبير</value>
+  </data>
+  <data name="le" xml:space="preserve">
+    <value>ج</value>
+  </data>
+  <data name="dodossweets" xml:space="preserve">
+    <value>حلويات دودوز</value>
+  </data>
+  <data name="Delicioussweetsandcakes" xml:space="preserve">
+    <value>أشهي الحلويات و الكيكات</value>
+  </data>
+  <data name="elmahallaelkubra" xml:space="preserve">
+    <value>المحلة الكبرى</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>الشركة</value>
+  </data>
+  <data name="Whoareus" xml:space="preserve">
+    <value>من نحن</value>
+  </data>
+  <data name="privacypolicy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>
+  <data name="allrightsreserved" xml:space="preserve">
+    <value>جميع الحقوق محفوظة</value>
   </data>
 </root>

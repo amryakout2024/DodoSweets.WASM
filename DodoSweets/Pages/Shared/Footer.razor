@@ -1,4 +1,5 @@
 ﻿@using Microsoft.Extensions.Options
+@inject IStringLocalizer<AppResource> Loc
 
 <!--inject IOptions<ContactInfoOptions> ContactInfoOptions-->
 
@@ -8,19 +9,20 @@
             <div class="col-12 col-md-12 col-lg-6">
                 <div class="footer-border-bottom d-flex flex-column align-items-center justify-content-center rounded p-2">
                     <a class="anchor-style" href="">
-                        <h3 class="mb-3">حلويات دودوز</h3>
+                        <h3 class="mb-3">@Loc["dodossweets"]</h3>
                     </a>
                     <p class="text-white mb-0">
-                        أشهي الحلويات و الكيكات
+                        @Loc["Delicioussweetsandcakes"]
                     </p>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-3">
-                <h6 class="frame-title text-uppercase mb-4">تواصل معنا</h6>
+                <h6 class="frame-title text-uppercase mb-4">@Loc["Contactus"]</h6>
                 <p class="mb-2 d-flex">
                     <i class="fa fa-map-marker-alt me-3 justify-content-start"></i>
-                    المحلة الكبرى</p>
+                    @Loc["elmahallaelkubra"]
+                </p>
                 <p class="mb-2 d-flex">
                     <i class="fa fa-phone-alt me-3 justify-content-start"></i>
                     0541238108</p>
@@ -37,10 +39,10 @@
 
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="col-md-6 d-flex flex-column align-items-start">
-                    <h6 class="frame-title">الشركة</h6>
-                    <a class="frame-body" href="">من نحن</a>
-                    <a class="frame-body" href="">سياسة الخصوصية</a>
-                    <a class="frame-body" href="">الشروط و الأحكام</a>
+                    <h6 class="frame-title">@Loc["company"]</h6>
+                    <a class="frame-body" href="">@Loc["Whoareus"]</a>
+                    <a class="frame-body" href="">@Loc["privacypolicy"]</a>
+                    <a class="frame-body" href="">@Loc["termsandconditions"]</a>
                 </div>
             </div>
 
@@ -51,22 +53,22 @@
         <div class="copyright">
             <div class="row">
                 <MudStack class="col-md-6 text-start mb-2 p-0" Spacing="0">
-                    <MudStack Row="true" Spacing="0">
-                        , جميع الحقوق محفوظة .
-                        <a style="color:darkslateblue" class="me-1" href="/">حلويات دودوز</a>
-                        &copy;
+                    <MudStack Row="true" Spacing="1">
+                        , @Loc["allrightsreserved"] 
+                        &copy; 
+                        <a style="color:darkslateblue" class="me-1" href="/"> @Loc["dodossweets"]</a>
                     </MudStack>
-                    <MudStack Row="true" Spacing="0">
+                    <MudStack Row="true" Spacing="1">
+                        Developed By
                         <a style="color:darkslateblue" class="ms-1"
                            href="https://www.linkedin.com/in/amr-yakout-683ba0272/">
                             amr yakout
                         </a>
-                        Developed By
                     </MudStack>
                 </MudStack>
                 <div class="col-md-6">
                     <div class="d-flex align-items-end text-center mb-2 justify-content-center justify-content-md-end">
-                        <a href="/" style="color:darkslateblue">الرئيسية</a>
+                        <a href="/" style="color:darkslateblue">@Loc["home"]</a>
                     </div>
                 </div>
             </div>
