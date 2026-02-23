@@ -124,6 +124,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Backtolist.
+        /// </summary>
+        public static string Backtolist {
+            get {
+                return ResourceManager.GetString("Backtolist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Birth date.
         /// </summary>
         public static string Birthdate {
@@ -426,6 +435,15 @@ namespace DodoSweets.Resources {
         public static string Delicioussweetsandcakes {
             get {
                 return ResourceManager.GetString("Delicioussweetsandcakes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Developed by.
+        /// </summary>
+        public static string Developedby {
+            get {
+                return ResourceManager.GetString("Developedby", resourceCulture);
             }
         }
         
@@ -1389,6 +1407,15 @@ namespace DodoSweets.Resources {
         public static string Savemealbynametouseitagainasreadymeal {
             get {
                 return ResourceManager.GetString("Savemealbynametouseitagainasreadymeal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
             }
         }
         

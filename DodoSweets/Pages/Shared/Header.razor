@@ -1,9 +1,9 @@
 ﻿@using DodoSweets.Models
 @using Microsoft.Extensions.Options
 @using System.Collections.ObjectModel
-@inject IJSRuntime JS
 @inject NavigationManager Nav
 @inject IStringLocalizer<AppResource> Loc
+@inject IJSRuntime JSRuntime
 
 //make pages navigation in blaz
 
@@ -19,7 +19,8 @@
         <MudIcon Style="color:deeppink"
                  Icon="@Icons.Material.Filled.SupportAgent" Size="Size.Medium" />
 
-        <MudText Style="color:deeppink;font-size:13px">@Loc["Lang"]</MudText>
+        <MudText Style="color:deeppink;font-size:13px;cursor:pointer"
+                @onclick="async ()=>await ChangeLanguage()">@Loc["Lang"]</MudText>
 
     </MudStack>
 </div>
@@ -30,11 +31,27 @@
     {
         var d = Loc["Lang"];
     }
-    private async Task ChangeLanguage(string culture)
+
+    public async Task ChangeLanguage()
     {
-        await JS.InvokeVoidAsync("localStorage.setItem", "BlazorCulture", culture);
-        // WASM requires a reload to apply the new CultureInfo to the thread
-        Nav.NavigateTo(Nav.Uri, forceLoad: true);
+        if (CultureInfo.CurrentUICulture.Name == "en-US")
+        {
+            // 1. Store the preference in local storage for persistence
+            await JSRuntime.InvokeVoidAsync("localStorage.setItem", "BlazorCulture", "ar-SA");
+
+            // 2. Force a reload to let the Program.cs apply the new culture on startup
+            Nav.NavigateTo(Nav.Uri, forceLoad: true);
+
+        }
+        else
+        {
+            // 1. Store the preference in local storage for persistence
+            await JSRuntime.InvokeVoidAsync("localStorage.setItem", "BlazorCulture", "en-US");
+
+            // 2. Force a reload to let the Program.cs apply the new culture on startup
+            Nav.NavigateTo(Nav.Uri, forceLoad: true);
+        }
+
     }
 
 }

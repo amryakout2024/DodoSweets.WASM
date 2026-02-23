@@ -678,4 +678,13 @@
   <data name="allrightsreserved" xml:space="preserve">
     <value>All rights reserved</value>
   </data>
+  <data name="Backtolist" xml:space="preserve">
+    <value>Backtolist</value>
+  </data>
+  <data name="Developedby" xml:space="preserve">
+    <value>Developed by</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
 </root>

@@ -18,10 +18,13 @@ builder.Services.AddLocalization();
 
 var host = builder.Build();
 
+
+
+
 // Get saved culture or default to English
 var js = host.Services.GetRequiredService<IJSRuntime>();
-var result = await js.InvokeAsync<string>("localStorage.getItem", "BlazorCulture");
-var culture = result ?? "en-US";
+var CultureName = await js.InvokeAsync<string>("localStorage.getItem", "BlazorCulture");
+var culture = CultureName ?? "en-US";
 
 var cultureInfo = new CultureInfo(culture);
 CultureInfo.DefaultThreadCurrentCulture = cultureInfo;

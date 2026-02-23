@@ -678,4 +678,13 @@
   <data name="allrightsreserved" xml:space="preserve">
     <value>جميع الحقوق محفوظة</value>
   </data>
+  <data name="Backtolist" xml:space="preserve">
+    <value>عودة إلي القائمة</value>
+  </data>
+  <data name="Developedby" xml:space="preserve">
+    <value>مطور بواسطة</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
 </root>

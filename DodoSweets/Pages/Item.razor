@@ -1,5 +1,6 @@
 ﻿@page "/item/{Name}"
 @using DodoSweets.Models
+@inject IStringLocalizer<AppResource> Loc
 
 <MudContainer Class="mt-5">
 
@@ -21,17 +22,14 @@
             <MudCardContent>
                 <MudText Typo="Typo.body1">@cake.Description</MudText>
                 <MudText Color="Color.Error" Typo="Typo.h6">
-                    @cake.Price ج
+                    @cake.Price @Loc["le"]
                 </MudText>
 
             </MudCardContent>
             <MudCardActions>
-                <MudButton Variant="Variant.Text" Style="font-size:16px" Color="Color.Primary" href="/">عودة إلي القائمة</MudButton>
+                <MudButton Variant="Variant.Text" Style="font-size:16px" Color="Color.Primary" href="/">@Loc["Backtolist"]</MudButton>
             </MudCardActions>
-@*             <MudCardActions>
-                <MudButton Variant="Variant.Text" Color="Color.Primary" href="/">Back to List</MudButton>
-            </MudCardActions>
- *@        </MudCard>
+         </MudCard>
     }
 </MudContainer>
 
