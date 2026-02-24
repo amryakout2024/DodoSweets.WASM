@@ -687,4 +687,43 @@
   <data name="Search" xml:space="preserve">
     <value>Search</value>
   </data>
+  <data name="dispacetochocolatemedium" xml:space="preserve">
+    <value>Dispaceto chocolate medium</value>
+  </data>
+  <data name="dispacetochocolatesmall" xml:space="preserve">
+    <value>Dispaceto chocolate small</value>
+  </data>
+  <data name="dispasetodiet" xml:space="preserve">
+    <value>Dispaseto diet</value>
+  </data>
+  <data name="fadegchocolatenuts" xml:space="preserve">
+    <value>Fadeg chocolate nuts</value>
+  </data>
+  <data name="fadegchocolatejamal" xml:space="preserve">
+    <value>Fadeg chocolate en jamal</value>
+  </data>
+  <data name="fadegchocolatecaramel" xml:space="preserve">
+    <value>Fadeg chocolate caramel</value>
+  </data>
+  <data name="basbosacreamy" xml:space="preserve">
+    <value>Basbosa creamy kilo</value>
+  </data>
+  <data name="basbosaalmond" xml:space="preserve">
+    <value>Basbosa almond plate</value>
+  </data>
+  <data name="basbosahazelnut" xml:space="preserve">
+    <value>Basbosa hazelnut half kg</value>
+  </data>
+  <data name="konafanabulsia" xml:space="preserve">
+    <value>Konafa nabulsia plate</value>
+  </data>
+  <data name="qaraqeshdates" xml:space="preserve">
+    <value>Karakesh dates kilo</value>
+  </data>
+  <data name="qaraqeshsada" xml:space="preserve">
+    <value>Karakesh sada kilo</value>
+  </data>
+  <data name="qorsdates" xml:space="preserve">
+    <value>Koras dates kilo</value>
+  </data>
 </root>

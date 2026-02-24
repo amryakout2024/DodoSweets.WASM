@@ -687,4 +687,43 @@
   <data name="Search" xml:space="preserve">
     <value>بحث</value>
   </data>
+  <data name="dispacetochocolatemedium" xml:space="preserve">
+    <value>ديسباسيتو شوكليت حجم وسط</value>
+  </data>
+  <data name="dispacetochocolatesmall" xml:space="preserve">
+    <value>ديسباسيتو شوكليت حجم صغير</value>
+  </data>
+  <data name="dispasetodiet" xml:space="preserve">
+    <value>ديسباسيتو دايت</value>
+  </data>
+  <data name="fadegchocolatenuts" xml:space="preserve">
+    <value>فادج شوكليت كيك بالفسدق الحلبي</value>
+  </data>
+  <data name="fadegchocolatejamal" xml:space="preserve">
+    <value>فادج شوكليت كيك بعين الجمل</value>
+  </data>
+  <data name="fadegchocolatecaramel" xml:space="preserve">
+    <value>فادج شوكليت كيك بصوص الكراميل</value>
+  </data>
+  <data name="basbosacreamy" xml:space="preserve">
+    <value>بسبوسه بالقشطه الكيلو</value>
+  </data>
+  <data name="basbosaalmond" xml:space="preserve">
+    <value>طبق بسبوسه باللوز</value>
+  </data>
+  <data name="basbosahazelnut" xml:space="preserve">
+    <value>هريسه بندق نص كيلو</value>
+  </data>
+  <data name="konafanabulsia" xml:space="preserve">
+    <value>صينيه كنافه نابلسيه</value>
+  </data>
+  <data name="qaraqeshdates" xml:space="preserve">
+    <value>قراقيش بالعجوه الكيلو</value>
+  </data>
+  <data name="qaraqeshsada" xml:space="preserve">
+    <value>قراقيش ساده الكيلو</value>
+  </data>
+  <data name="qorsdates" xml:space="preserve">
+    <value>قرص بالعجوه الكيلو</value>
+  </data>
 </root>

@@ -133,6 +133,33 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Basbosa almond plate.
+        /// </summary>
+        public static string basbosaalmond {
+            get {
+                return ResourceManager.GetString("basbosaalmond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Basbosa creamy kilo.
+        /// </summary>
+        public static string basbosacreamy {
+            get {
+                return ResourceManager.GetString("basbosacreamy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Basbosa hazelnut half kg.
+        /// </summary>
+        public static string basbosahazelnut {
+            get {
+                return ResourceManager.GetString("basbosahazelnut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Birth date.
         /// </summary>
         public static string Birthdate {
@@ -493,6 +520,33 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dispaceto chocolate medium.
+        /// </summary>
+        public static string dispacetochocolatemedium {
+            get {
+                return ResourceManager.GetString("dispacetochocolatemedium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dispaceto chocolate small.
+        /// </summary>
+        public static string dispacetochocolatesmall {
+            get {
+                return ResourceManager.GetString("dispacetochocolatesmall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dispaseto diet.
+        /// </summary>
+        public static string dispasetodiet {
+            get {
+                return ResourceManager.GetString("dispasetodiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dodo’s sweets.
         /// </summary>
         public static string dodossweets {
@@ -646,6 +700,33 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fadeg chocolate caramel.
+        /// </summary>
+        public static string fadegchocolatecaramel {
+            get {
+                return ResourceManager.GetString("fadegchocolatecaramel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fadeg chocolate en jamal.
+        /// </summary>
+        public static string fadegchocolatejamal {
+            get {
+                return ResourceManager.GetString("fadegchocolatejamal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fadeg chocolate nuts.
+        /// </summary>
+        public static string fadegchocolatenuts {
+            get {
+                return ResourceManager.GetString("fadegchocolatenuts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fats.
         /// </summary>
         public static string Fats {
@@ -786,6 +867,15 @@ namespace DodoSweets.Resources {
         public static string Ketodiet {
             get {
                 return ResourceManager.GetString("Ketodiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Konafa nabulsia plate.
+        /// </summary>
+        public static string konafanabulsia {
+            get {
+                return ResourceManager.GetString("konafanabulsia", resourceCulture);
             }
         }
         
@@ -1308,6 +1398,33 @@ namespace DodoSweets.Resources {
         public static string Protiens {
             get {
                 return ResourceManager.GetString("Protiens", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Karakesh dates kilo.
+        /// </summary>
+        public static string qaraqeshdates {
+            get {
+                return ResourceManager.GetString("qaraqeshdates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Karakesh sada kilo.
+        /// </summary>
+        public static string qaraqeshsada {
+            get {
+                return ResourceManager.GetString("qaraqeshsada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Koras dates kilo.
+        /// </summary>
+        public static string qorsdates {
+            get {
+                return ResourceManager.GetString("qorsdates", resourceCulture);
             }
         }
         
