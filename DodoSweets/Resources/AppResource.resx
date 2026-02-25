@@ -726,4 +726,43 @@
   <data name="qorsdates" xml:space="preserve">
     <value>Koras dates kilo</value>
   </data>
+  <data name="breadlentil" xml:space="preserve">
+    <value>Bread lentil 250 gm</value>
+  </data>
+  <data name="biscuitoatsdiet" xml:space="preserve">
+    <value>Biscuit oats diet 250 gm</value>
+  </data>
+  <data name="breadoatsdiet" xml:space="preserve">
+    <value>bread oats diet 250 gm</value>
+  </data>
+  <data name="trafilcakevanillamango" xml:space="preserve">
+    <value>Trafil cake vanilla mango</value>
+  </data>
+  <data name="trafilcakevanillastrawberry" xml:space="preserve">
+    <value>Trafil cake vanilla strawberry</value>
+  </data>
+  <data name="trafilcakevanillaberry" xml:space="preserve">
+    <value>Trafil cake vanilla berry</value>
+  </data>
+  <data name="trafilcakevanillachocolate" xml:space="preserve">
+    <value>Trafil cake vanilla chocolate</value>
+  </data>
+  <data name="cheesecakeberry" xml:space="preserve">
+    <value>Cheese cake berry</value>
+  </data>
+  <data name="cheesecakestrawberry" xml:space="preserve">
+    <value>Cheese cake strawberry</value>
+  </data>
+  <data name="cheesecakemix" xml:space="preserve">
+    <value>Cheesecake berry strawberry</value>
+  </data>
+  <data name="redvelvet" xml:space="preserve">
+    <value>Red velvet</value>
+  </data>
+  <data name="brawnesjamal" xml:space="preserve">
+    <value>Brawnes en jamal</value>
+  </data>
+  <data name="tortablackforest" xml:space="preserve">
+    <value>Torta black forest size 14 cm</value>
+  </data>
 </root>

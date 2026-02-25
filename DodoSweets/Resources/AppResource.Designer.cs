@@ -169,6 +169,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Biscuit oats diet 250 gm.
+        /// </summary>
+        public static string biscuitoatsdiet {
+            get {
+                return ResourceManager.GetString("biscuitoatsdiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Body activity.
         /// </summary>
         public static string Bodyactivity {
@@ -201,6 +210,33 @@ namespace DodoSweets.Resources {
         public static string Bothnewpasswordsarenotidentical {
             get {
                 return ResourceManager.GetString("Bothnewpasswordsarenotidentical", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brawnes en jamal.
+        /// </summary>
+        public static string brawnesjamal {
+            get {
+                return ResourceManager.GetString("brawnesjamal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bread lentil 250 gm.
+        /// </summary>
+        public static string breadlentil {
+            get {
+                return ResourceManager.GetString("breadlentil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bread oats diet 250 gm.
+        /// </summary>
+        public static string breadoatsdiet {
+            get {
+                return ResourceManager.GetString("breadoatsdiet", resourceCulture);
             }
         }
         
@@ -309,6 +345,33 @@ namespace DodoSweets.Resources {
         public static string Checkyourinternetconnection {
             get {
                 return ResourceManager.GetString("Checkyourinternetconnection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cheese cake berry.
+        /// </summary>
+        public static string cheesecakeberry {
+            get {
+                return ResourceManager.GetString("cheesecakeberry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cheesecake berry strawberry.
+        /// </summary>
+        public static string cheesecakemix {
+            get {
+                return ResourceManager.GetString("cheesecakemix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cheese cake strawberry.
+        /// </summary>
+        public static string cheesecakestrawberry {
+            get {
+                return ResourceManager.GetString("cheesecakestrawberry", resourceCulture);
             }
         }
         
@@ -1465,6 +1528,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Red velvet.
+        /// </summary>
+        public static string redvelvet {
+            get {
+                return ResourceManager.GetString("redvelvet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to error.
         /// </summary>
         public static string RegexValidationMessage {
@@ -1699,6 +1771,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Torta black forest size 14 cm.
+        /// </summary>
+        public static string tortablackforest {
+            get {
+                return ResourceManager.GetString("tortablackforest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total calories.
         /// </summary>
         public static string Totalcalories {
@@ -1749,6 +1830,42 @@ namespace DodoSweets.Resources {
         public static string Totalprotiens {
             get {
                 return ResourceManager.GetString("Totalprotiens", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trafil cake vanilla berry.
+        /// </summary>
+        public static string trafilcakevanillaberry {
+            get {
+                return ResourceManager.GetString("trafilcakevanillaberry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trafil cake vanilla chocolate.
+        /// </summary>
+        public static string trafilcakevanillachocolate {
+            get {
+                return ResourceManager.GetString("trafilcakevanillachocolate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trafil cake vanilla mango.
+        /// </summary>
+        public static string trafilcakevanillamango {
+            get {
+                return ResourceManager.GetString("trafilcakevanillamango", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trafil cake vanilla strawberry.
+        /// </summary>
+        public static string trafilcakevanillastrawberry {
+            get {
+                return ResourceManager.GetString("trafilcakevanillastrawberry", resourceCulture);
             }
         }
         

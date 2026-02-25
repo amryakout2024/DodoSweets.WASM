@@ -13,7 +13,7 @@
         <MudCard Elevation="3">
             <MudCardHeader>
                 <CardHeaderContent>
-                    <MudText Typo="Typo.h4" Style="text-align:center">@cake.Name</MudText>
+                    <MudText Typo="Typo.h4" Style="text-align:center">@Loc[@cake.Name]</MudText>
                 </CardHeaderContent>
             </MudCardHeader>
 
@@ -42,6 +42,6 @@
 
     protected override void OnInitialized()
     {
-        cake = Home.Cakes.Where(x => x.Name == Name).FirstOrDefault()??new Cake();
+        cake = Home.Cakes.Where(x => Loc[x.Name] == Name).FirstOrDefault() ?? new Cake();
     }
 }

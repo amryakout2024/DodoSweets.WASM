@@ -726,4 +726,43 @@
   <data name="qorsdates" xml:space="preserve">
     <value>قرص بالعجوه الكيلو</value>
   </data>
+  <data name="breadlentil" xml:space="preserve">
+    <value>خبز عدس دايت ربع كيلو</value>
+  </data>
+  <data name="biscuitoatsdiet" xml:space="preserve">
+    <value>بسكوت شوفان دايت ربع كيلو</value>
+  </data>
+  <data name="breadoatsdiet" xml:space="preserve">
+    <value>خبز شوفان دايت ربع كيلو</value>
+  </data>
+  <data name="trafilcakevanillamango" xml:space="preserve">
+    <value>ترايفل كيك فانيليا مانجو</value>
+  </data>
+  <data name="trafilcakevanillastrawberry" xml:space="preserve">
+    <value>ترايفل كيك فانيليا فراولة</value>
+  </data>
+  <data name="trafilcakevanillaberry" xml:space="preserve">
+    <value>ترايفل كيك فانيليا توت</value>
+  </data>
+  <data name="trafilcakevanillachocolate" xml:space="preserve">
+    <value>ترايفل كيك شوكولاته</value>
+  </data>
+  <data name="cheesecakeberry" xml:space="preserve">
+    <value>تشيز كيك توت</value>
+  </data>
+  <data name="cheesecakestrawberry" xml:space="preserve">
+    <value>تشيز كيك فراولة</value>
+  </data>
+  <data name="cheesecakemix" xml:space="preserve">
+    <value>تشيز كيك ميكس توت و فراولة</value>
+  </data>
+  <data name="redvelvet" xml:space="preserve">
+    <value>ريد فيلفيت</value>
+  </data>
+  <data name="brawnesjamal" xml:space="preserve">
+    <value>براونيز بعين الجمل</value>
+  </data>
+  <data name="tortablackforest" xml:space="preserve">
+    <value>تورته بلاك فورست مقاس 14 سم</value>
+  </data>
 </root>
