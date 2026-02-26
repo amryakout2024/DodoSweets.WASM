@@ -765,4 +765,46 @@
   <data name="tortablackforest" xml:space="preserve">
     <value>Torta black forest size 14 cm</value>
   </data>
+  <data name="dispacetochocolatelargedescription" xml:space="preserve">
+    <value>Two layers of chocolate cake and two layers of despacito chocolate, decorated with crispy chocolate and chocolate mirror glaze.</value>
+  </data>
+  <data name="dispacetochocolatemediumdescription" xml:space="preserve">
+    <value>A layer of chocolate cake and a layer of despacito chocolate, decorated with crispy chocolate and chocolate mirror glaze.</value>
+  </data>
+  <data name="dispacetochocolatesmalldescription" xml:space="preserve">
+    <value>A layer of chocolate cake and a layer of despacito chocolate, decorated with crispy chocolate and chocolate mirror glaze.</value>
+  </data>
+  <data name="dispasetodietdescription" xml:space="preserve">
+    <value>A layer of chocolate oatmeal cake, a layer of diet despacito cream, drizzled with diet chocolate sauce and topped with pistachios.</value>
+  </data>
+  <data name="fadegchocolatenutsdescription" xml:space="preserve">
+    <value>Two layers of chocolate cake with two layers of buttercream frosting, topped with chocolate sauce and decorated with pistachios.</value>
+  </data>
+  <data name="fadegchocolatejamaldescription" xml:space="preserve">
+    <value>Two layers of chocolate cake with two layers of buttercream frosting, topped with chocolate sauce and decorated with walnuts.</value>
+  </data>
+  <data name="fadegchocolatecarameldescription" xml:space="preserve">
+    <value>Two layers of chocolate cake with two layers of buttercream frosting, topped with chocolate sauce and decorated with caramel sauce.</value>
+  </data>
+  <data name="basbosacreamydescription" xml:space="preserve">
+    <value>Basbousa with cream and clarified butter</value>
+  </data>
+  <data name="basbosaalmonddescription" xml:space="preserve">
+    <value>Basbousa with clarified butter and almonds</value>
+  </data>
+  <data name="basbosahazelnutdescription" xml:space="preserve">
+    <value>Harissa with clarified butter and hazelnuts</value>
+  </data>
+  <data name="konafanabulsiadescription" xml:space="preserve">
+    <value>A layer of kunafa with clarified butter and a layer of akkawi cheese</value>
+  </data>
+  <data name="qaraqeshdatesdescription" xml:space="preserve">
+    <value>Date-filled qaraqish with clarified butter</value>
+  </data>
+  <data name="qaraqeshsadadescription" xml:space="preserve">
+    <value>Qaraqish with clarified butter</value>
+  </data>
+  <data name="qorsdatesdescription" xml:space="preserve">
+    <value>Date-filled dry buns with homemade butter</value>
+  </data>
 </root>

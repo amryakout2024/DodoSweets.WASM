@@ -57,46 +57,81 @@ Style="margin-top:90px !important">
     private bool coerceValue;
     private bool selectedOnTab;
 
+//     Cakes = new ()
+//     {
+//     new Cake { Description="طبقتين من كيك الشوكولاته وطبقتين شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته" },
+//     new Cake { Description="طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته" },
+//     new Cake { Description="طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته" },
+//     new Cake { Description="طبقه كيكه شوفان بالشوكولاته وطبقه من كريمه الديسباسبتو الدايت ومزينه بصوص الشوكولاته الدايت وفسدق حلبي" },
+
+//     new Cake { Description="طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بفسدق حلبي" },
+//     new Cake { Description="طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بعين الجمل" },
+//     new Cake { Description="طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بصوص الكراميل" },
+
+//     new Cake { Description="بسبوسه بالقشطه بالسمن البلدي" },
+//     new Cake { Description="بسبوسه بالسمن البلدي واللوز" },
+//     new Cake { Description="هريسه بالسمن البلدي والبندق" },
+//     new Cake { Description="طبقه كنافه بالسمن البلدي مع طبقه جبن عكاوي" },
+
+//     new Cake { Description="قراقيش بالعجوه بالسمن البلدي" },
+//     new Cake { Description="قراقيش بالسمن البلدي" },
+//     new Cake { Description="قرص بالعجوه بالزبده البلدي" },
+
+//     new Cake { Description="خبز عدس دايت بدون دقيق" },
+//     new Cake { Description="بسكوت شوفان دايت" },
+//     new Cake { Description="خبز شوفان دايت بدون دقيق" },
+
+//     new Cake { Description="طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص المانجا" },
+//     new Cake { Description="طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص الفراوله" },
+//     new Cake { Description="طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص التوت" },
+//     new Cake { Description="طبقات من كيك الشوكولاته الإسفنجي وطبقات من كريمه الشوكولاته مزينة بصوص الشوكولاته" },
+
+//     new Cake { Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص التوت" },
+//     new Cake { Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص الفراوله" },
+//     new Cake { Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص ميكس فراوله وتوت" },
+
+//     new Cake { Description="طبقتين من الكيك المخملي مع طبقتين من كريمه الجبنه" },
+//     new Cake { Description="كيك غني بالشوكولاته مع عين الجمل مزينة بصوص الشوكولاته" },
+//     new Cake { Description="طبقتين من كيك الشوكولاته الإسفنجي وطبقتين من كريمه الشوكولاته ومزينه بالكريز" },
+// };
+
     public static ObservableCollection<Cake> Cakes = new()
-    {
-        new Cake { Name="dispacetochocolatelarge", Price= 100, OldPrice= 120, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatelarge.jpg",Description="طبقتين من كيك الشوكولاته وطبقتين شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته"},
-        new Cake { Name="dispacetochocolatemedium", Price= 40, OldPrice= 50, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatemedium.jpg",Description="طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته"},
-        new Cake { Name="dispacetochocolatesmall", Price= 30, OldPrice= 35, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatesmall.jpg",Description="طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته"},
-        new Cake { Name="dispasetodiet", Price=125 , OldPrice=130 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispasetodiet.jpg",Description="طبقه كيكه شوفان بالشوكولاته وطبقه من كريمه الديسباسبتو الدايت ومزينه بصوص الشوكولاته الدايت وفسدق حلبي"},
+{
+    new Cake { Name="dispacetochocolatelarge", Price= 100, OldPrice= 120, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatelarge.jpg", Description="dispacetochocolatelargedescription"},
+    new Cake { Name="dispacetochocolatemedium", Price= 40, OldPrice= 50, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatemedium.jpg", Description="dispacetochocolatemediumdescription"},
+    new Cake { Name="dispacetochocolatesmall", Price= 30, OldPrice= 35, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatesmall.jpg", Description="dispacetochocolatesmalldescription"},
+    new Cake { Name="dispasetodiet", Price=125 , OldPrice=130 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispasetodiet.jpg", Description="dispasetodietdescription"},
 
-        new Cake { Name="fadegchocolatenuts", Price=70 , OldPrice=80 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatenuts.jpg",Description="طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بفسدق حلبي"},
-        new Cake { Name="fadegchocolatejamal", Price=70 , OldPrice=85 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatejamal.jpg",Description="طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بعين الجمل"},
-        new Cake { Name="fadegchocolatecaramel", Price=70 , OldPrice=80 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatecaramel.jpg",Description="طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بصوص الكراميل"},
+    new Cake { Name="fadegchocolatenuts", Price=70 , OldPrice=80 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatenuts.jpg", Description="fadegchocolatenutsdescription"},
+    new Cake { Name="fadegchocolatejamal", Price=70 , OldPrice=85 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatejamal.jpg", Description="fadegchocolatejamaldescription"},
+    new Cake { Name="fadegchocolatecaramel", Price=70 , OldPrice=80 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatecaramel.jpg", Description="fadegchocolatecarameldescription"},
 
-        new Cake { Name="basbosacreamy", Price=150 , OldPrice=165 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosacreamy.jpg",Description="بسبوسه بالقشطه بالسمن البلدي"},
-        new Cake { Name="basbosaalmond", Price=400 , OldPrice=410 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosaalmond.jpg",Description="بسبوسه بالسمن البلدي واللوز"},
-        new Cake { Name="basbosahazelnut", Price=200 , OldPrice=210 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosahazelnut.jpg",Description="هريسه بالسمن البلدي والبندق"},
-        new Cake { Name="konafanabulsia", Price=400 , OldPrice=440 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/konafanabulsia.jpg",Description="طبقه كنافه بالسمن البلدي مع طبقه جبن عكاوي"},
+    new Cake { Name="basbosacreamy", Price=150 , OldPrice=165 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosacreamy.jpg", Description="basbosacreamydescription"},
+    new Cake { Name="basbosaalmond", Price=400 , OldPrice=410 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosaalmond.jpg", Description="basbosaalmonddescription"},
+    new Cake { Name="basbosahazelnut", Price=200 , OldPrice=210 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosahazelnut.jpg", Description="basbosahazelnutdescription"},
+    new Cake { Name="konafanabulsia", Price=400 , OldPrice=440 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/konafanabulsia.jpg", Description="konafanabulsiadescription"},
 
-        new Cake { Name="qaraqeshdates", Price=250 , OldPrice=270 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qaraqeshdates.jpg",Description="قراقيش بالعجوه بالسمن البلدي"},
-        new Cake { Name="qaraqeshsada", Price=350 , OldPrice=360 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qaraqeshsada.jpg",Description="قراقيش بالسمن البلدي"},
-        new Cake { Name="qorsdates", Price=300 , OldPrice=320 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qorsdates.jpg",Description="قرص بالعجوه بالزبده البلدي"},
+    new Cake { Name="qaraqeshdates", Price=250 , OldPrice=270 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qaraqeshdates.jpg", Description="qaraqeshdatesdescription"},
+    new Cake { Name="qaraqeshsada", Price=350 , OldPrice=360 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qaraqeshsada.jpg", Description="qaraqeshsadadescription"},
+    new Cake { Name="qorsdates", Price=300 , OldPrice=320 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qorsdates.jpg", Description="qorsdatesdescription"},
 
-        new Cake { Name="breadlentil", Price=80 , OldPrice=85 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/breadlentil.jpg",Description="خبز عدس دايت بدون دقيق"},
-        new Cake { Name="biscuitoatsdiet", Price=125 , OldPrice=130 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/biscuitoatsdiet.jpg",Description="بسكوت شوفان دايت"},
-        new Cake { Name="breadoatsdiet", Price=70 , OldPrice=75 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/breadoatsdiet.jpg",Description="خبز شوفان دايت بدون دقيق"},
+    new Cake { Name="breadlentil", Price=80 , OldPrice=85 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="breadlentildescription"},
+    new Cake { Name="biscuitoatsdiet", Price=125 , OldPrice=130 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="biscuitoatsdietdescription"},
+    new Cake { Name="breadoatsdiet", Price=70 , OldPrice=75 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="breadoatsdietdescription"},
 
-        new Cake { Name="trafilcakevanillamango", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillamango.jpg",Description="طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص المانجا"},
-        new Cake { Name="trafilcakevanillastrawberry", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillastrawberry.jpg",Description="طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص الفراوله"},
-        new Cake { Name="trafilcakevanillaberry", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillaberry.jpg",Description="طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص التوت"},
-        new Cake { Name="trafilcakevanillachocolate", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillachocolate.jpg",Description="طبقات من كيك الشوكولاته الإسفنجي وطبقات من كريمه الشوكولاته مزينة بصوص الشوكولاته"},
+    new Cake { Name="trafilcakevanillamango", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="trafilcakevanillamangodescription"},
+    new Cake { Name="trafilcakevanillastrawberry", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="trafilcakevanillastrawberrydescription"},
+    new Cake { Name="trafilcakevanillaberry", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="trafilcakevanillaberrydescription"},
+    new Cake { Name="trafilcakevanillachocolate", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="trafilcakevanillachocolatedescription"},
 
-        new Cake { Name="cheesecakeberry", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakeberry.jpg",Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص التوت"},
-        new Cake { Name="cheesecakestrawberry", Price=75 , OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakestrawberry.jpg",Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص الفراوله"},
-        new Cake { Name="cheesecakemix", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakemix.jpg",Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص ميكس فراوله وتوت"},
+    new Cake { Name="cheesecakeberry", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="cheesecakeberrydescription"},
+    new Cake { Name="cheesecakestrawberry", Price=75 , OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="cheesecakestrawberrydescription"},
+    new Cake { Name="cheesecakemix", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="cheesecakemixdescription"},
 
-        new Cake { Name="redvelvet", Price=70 , OldPrice=90 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/redvelvet.jpg",Description="طبقتين من الكيك المخملي مع طبقتين من كريمه الجبنه"},
-        new Cake { Name="brawnesjamal", Price=50 , OldPrice=60 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/brawnesjamal.jpg",Description="كيك غني بالشوكولاته مع عين الجمل مزينة بصوص الشوكولاته"},
-        new Cake { Name="tortablackforest", Price=250 , OldPrice=260 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/tortablackforest.jpg",Description="طبقتين من كيك الشوكولاته الإسفنجي وطبقتين من كريمه الشوكولاته ومزينه بالكريز"},
-
-         };
-
-
+    new Cake { Name="redvelvet", Price=70 , OldPrice=90 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="redvelvetdescription"},
+    new Cake { Name="brawnesjamal", Price=50 , OldPrice=60 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="brawnesjamaldescription"},
+    new Cake { Name="tortablackforest", Price=250 , OldPrice=260 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/.jpg", Description="tortablackforestdescription"},
+};
     private Cake? selectedCake;
 
     private async Task OnCakeSelected(Cake cake)

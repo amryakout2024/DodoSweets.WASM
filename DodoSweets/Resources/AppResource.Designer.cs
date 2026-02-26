@@ -142,6 +142,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Basbousa with clarified butter and almonds.
+        /// </summary>
+        public static string basbosaalmonddescription {
+            get {
+                return ResourceManager.GetString("basbosaalmonddescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Basbosa creamy kilo.
         /// </summary>
         public static string basbosacreamy {
@@ -151,11 +160,29 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Basbousa with cream and clarified butter.
+        /// </summary>
+        public static string basbosacreamydescription {
+            get {
+                return ResourceManager.GetString("basbosacreamydescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Basbosa hazelnut half kg.
         /// </summary>
         public static string basbosahazelnut {
             get {
                 return ResourceManager.GetString("basbosahazelnut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Harissa with clarified butter and hazelnuts.
+        /// </summary>
+        public static string basbosahazelnutdescription {
+            get {
+                return ResourceManager.GetString("basbosahazelnutdescription", resourceCulture);
             }
         }
         
@@ -583,11 +610,29 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Two layers of chocolate cake and two layers of despacito chocolate, decorated with crispy chocolate and chocolate mirror glaze..
+        /// </summary>
+        public static string dispacetochocolatelargedescription {
+            get {
+                return ResourceManager.GetString("dispacetochocolatelargedescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dispaceto chocolate medium.
         /// </summary>
         public static string dispacetochocolatemedium {
             get {
                 return ResourceManager.GetString("dispacetochocolatemedium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A layer of chocolate cake and a layer of despacito chocolate, decorated with crispy chocolate and chocolate mirror glaze..
+        /// </summary>
+        public static string dispacetochocolatemediumdescription {
+            get {
+                return ResourceManager.GetString("dispacetochocolatemediumdescription", resourceCulture);
             }
         }
         
@@ -601,11 +646,29 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A layer of chocolate cake and a layer of despacito chocolate, decorated with crispy chocolate and chocolate mirror glaze..
+        /// </summary>
+        public static string dispacetochocolatesmalldescription {
+            get {
+                return ResourceManager.GetString("dispacetochocolatesmalldescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dispaseto diet.
         /// </summary>
         public static string dispasetodiet {
             get {
                 return ResourceManager.GetString("dispasetodiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A layer of chocolate oatmeal cake, a layer of diet despacito cream, drizzled with diet chocolate sauce and topped with pistachios..
+        /// </summary>
+        public static string dispasetodietdescription {
+            get {
+                return ResourceManager.GetString("dispasetodietdescription", resourceCulture);
             }
         }
         
@@ -772,6 +835,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Two layers of chocolate cake with two layers of buttercream frosting, topped with chocolate sauce and decorated with caramel sauce..
+        /// </summary>
+        public static string fadegchocolatecarameldescription {
+            get {
+                return ResourceManager.GetString("fadegchocolatecarameldescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fadeg chocolate en jamal.
         /// </summary>
         public static string fadegchocolatejamal {
@@ -781,11 +853,29 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Two layers of chocolate cake with two layers of buttercream frosting, topped with chocolate sauce and decorated with walnuts..
+        /// </summary>
+        public static string fadegchocolatejamaldescription {
+            get {
+                return ResourceManager.GetString("fadegchocolatejamaldescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fadeg chocolate nuts.
         /// </summary>
         public static string fadegchocolatenuts {
             get {
                 return ResourceManager.GetString("fadegchocolatenuts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Two layers of chocolate cake with two layers of buttercream frosting, topped with chocolate sauce and decorated with pistachios..
+        /// </summary>
+        public static string fadegchocolatenutsdescription {
+            get {
+                return ResourceManager.GetString("fadegchocolatenutsdescription", resourceCulture);
             }
         }
         
@@ -939,6 +1029,15 @@ namespace DodoSweets.Resources {
         public static string konafanabulsia {
             get {
                 return ResourceManager.GetString("konafanabulsia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A layer of kunafa with clarified butter and a layer of akkawi cheese.
+        /// </summary>
+        public static string konafanabulsiadescription {
+            get {
+                return ResourceManager.GetString("konafanabulsiadescription", resourceCulture);
             }
         }
         
@@ -1474,6 +1573,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Date-filled qaraqish with clarified butter.
+        /// </summary>
+        public static string qaraqeshdatesdescription {
+            get {
+                return ResourceManager.GetString("qaraqeshdatesdescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Karakesh sada kilo.
         /// </summary>
         public static string qaraqeshsada {
@@ -1483,11 +1591,29 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Qaraqish with clarified butter.
+        /// </summary>
+        public static string qaraqeshsadadescription {
+            get {
+                return ResourceManager.GetString("qaraqeshsadadescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Koras dates kilo.
         /// </summary>
         public static string qorsdates {
             get {
                 return ResourceManager.GetString("qorsdates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date-filled dry buns with homemade butter.
+        /// </summary>
+        public static string qorsdatesdescription {
+            get {
+                return ResourceManager.GetString("qorsdatesdescription", resourceCulture);
             }
         }
         

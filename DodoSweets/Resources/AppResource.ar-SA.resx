@@ -765,4 +765,47 @@
   <data name="tortablackforest" xml:space="preserve">
     <value>تورته بلاك فورست مقاس 14 سم</value>
   </data>
+  <data name="dispacetochocolatelargedescription" xml:space="preserve">
+    <value>طبقتين من كيك الشوكولاته وطبقتين شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته</value>
+  </data>
+  <data name="dispacetochocolatemediumdescription" xml:space="preserve">
+    <value>طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته</value>
+  </data>
+  <data name="dispacetochocolatesmalldescription" xml:space="preserve">
+    <value>طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته</value>
+  </data>
+  <data name="dispasetodietdescription" xml:space="preserve">
+    <value>طبقه كيكه شوفان بالشوكولاته وطبقه من كريمه الديسباسبتو الدايت ومزينه بصوص الشوكولاته الدايت وفسدق حلبي</value>
+  </data>
+  <data name="fadegchocolatenutsdescription" xml:space="preserve">
+    <value>طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بفسدق حلبي</value>
+  </data>
+  <data name="fadegchocolatejamaldescription" xml:space="preserve">
+    <value>طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بعين الجمل</value>
+  </data>
+  <data name="fadegchocolatecarameldescription" xml:space="preserve">
+    <value>طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بصوص الكراميل</value>
+  </data>
+  <data name="basbosacreamydescription" xml:space="preserve">
+    <value>بسبوسه بالقشطه بالسمن البلدي</value>
+  </data>
+  <data name="basbosaalmonddescription" xml:space="preserve">
+    <value>بسبوسه بالسمن البلدي واللوز</value>
+  </data>
+  <data name="basbosahazelnutdescription" xml:space="preserve">
+    <value>هريسه بالسمن البلدي والبندق</value>
+  </data>
+  <data name="konafanabulsiadescription" xml:space="preserve">
+    <value>طبقه كنافه بالسمن البلدي مع طبقه جبن عكاوي
+</value>
+  </data>
+  <data name="qaraqeshdatesdescription" xml:space="preserve">
+    <value>قراقيش بالعجوه بالسمن البلدي</value>
+  </data>
+  <data name="qaraqeshsadadescription" xml:space="preserve">
+    <value>قراقيش بالسمن البلدي</value>
+  </data>
+  <data name="qorsdatesdescription" xml:space="preserve">
+    <value>قرص بالعجوه بالزبده البلدي</value>
+  </data>
 </root>
