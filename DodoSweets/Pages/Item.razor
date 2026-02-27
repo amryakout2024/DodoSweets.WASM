@@ -33,7 +33,7 @@
     }
 </MudContainer>
 
-@code {
+    @code {
 
     [Parameter]
     public string? Name { get; set; }
@@ -42,6 +42,11 @@
 
     protected override void OnInitialized()
     {
-        cake = Home.Cakes.Where(x => Loc[x.Name] == Name).FirstOrDefault() ?? new Cake();
+        cake = Home.Cakes.Where(x => x.Name == Name).FirstOrDefault() ?? new Cake();
     }
+
+    // protected override async Task<Cake> OnInitializedAsync()
+    // {
+    //     return Home.Cakes.Where(x => x.Name == Name).FirstOrDefault() ?? new Cake();
+    // }
 }

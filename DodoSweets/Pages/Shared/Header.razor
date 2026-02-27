@@ -40,8 +40,8 @@
             await JSRuntime.InvokeVoidAsync("localStorage.setItem", "BlazorCulture", "ar-SA");
 
             // 2. Force a reload to let the Program.cs apply the new culture on startup
-            Nav.NavigateTo("/", forceLoad: true);
-            // Nav.NavigateTo(Nav.Uri, forceLoad: true);
+            // Nav.NavigateTo("/", forceLoad: true); load to the home page
+            Nav.NavigateTo(Nav.Uri, forceLoad: true);
 
         }
         else
@@ -50,7 +50,7 @@
             await JSRuntime.InvokeVoidAsync("localStorage.setItem", "BlazorCulture", "en-US");
 
             // 2. Force a reload to let the Program.cs apply the new culture on startup
-            Nav.NavigateTo("/", forceLoad: true);
+            Nav.NavigateTo(Nav.Uri, forceLoad: true);
         }
 
     }

@@ -42,7 +42,7 @@ Style="margin-top:90px !important">
     @foreach (var p in Cakes)
     {
          <MudItem>
-            <ProductCard Name=@Loc[@p.Name]
+            <ProductCard Name=@p.Name
                          Image="@p.Image"
                          Price="@p.Price"
                          OldPrice="@p.OldPrice" />
@@ -56,44 +56,6 @@ Style="margin-top:90px !important">
     private bool coerceText;
     private bool coerceValue;
     private bool selectedOnTab;
-
-//     Cakes = new ()
-//     {
-//     new Cake { Description="طبقتين من كيك الشوكولاته وطبقتين شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته" },
-//     new Cake { Description="طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته" },
-//     new Cake { Description="طبقه من كيك الشوكولاته وطبقه شوكولاته ديسباسيتو مزينة بشوكولاته كرسبي ومروار الشوكولاته" },
-//     new Cake { Description="طبقه كيكه شوفان بالشوكولاته وطبقه من كريمه الديسباسبتو الدايت ومزينه بصوص الشوكولاته الدايت وفسدق حلبي" },
-
-//     new Cake { Description="طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بفسدق حلبي" },
-//     new Cake { Description="طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بعين الجمل" },
-//     new Cake { Description="طبقتين كيك شوكولاته مع طبقتين من كريمه الزبده ومغطاه بصوص الشوكولاته ومزينة بصوص الكراميل" },
-
-//     new Cake { Description="بسبوسه بالقشطه بالسمن البلدي" },
-//     new Cake { Description="بسبوسه بالسمن البلدي واللوز" },
-//     new Cake { Description="هريسه بالسمن البلدي والبندق" },
-//     new Cake { Description="طبقه كنافه بالسمن البلدي مع طبقه جبن عكاوي" },
-
-//     new Cake { Description="قراقيش بالعجوه بالسمن البلدي" },
-//     new Cake { Description="قراقيش بالسمن البلدي" },
-//     new Cake { Description="قرص بالعجوه بالزبده البلدي" },
-
-//     new Cake { Description="خبز عدس دايت بدون دقيق" },
-//     new Cake { Description="بسكوت شوفان دايت" },
-//     new Cake { Description="خبز شوفان دايت بدون دقيق" },
-
-//     new Cake { Description="طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص المانجا" },
-//     new Cake { Description="طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص الفراوله" },
-//     new Cake { Description="طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص التوت" },
-//     new Cake { Description="طبقات من كيك الشوكولاته الإسفنجي وطبقات من كريمه الشوكولاته مزينة بصوص الشوكولاته" },
-
-//     new Cake { Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص التوت" },
-//     new Cake { Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص الفراوله" },
-//     new Cake { Description="طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص ميكس فراوله وتوت" },
-
-//     new Cake { Description="طبقتين من الكيك المخملي مع طبقتين من كريمه الجبنه" },
-//     new Cake { Description="كيك غني بالشوكولاته مع عين الجمل مزينة بصوص الشوكولاته" },
-//     new Cake { Description="طبقتين من كيك الشوكولاته الإسفنجي وطبقتين من كريمه الشوكولاته ومزينه بالكريز" },
-// };
 
     public static ObservableCollection<Cake> Cakes = new()
 {
@@ -132,7 +94,8 @@ Style="margin-top:90px !important">
     new Cake { Name="brawnesjamal", Price=50 , OldPrice=60 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/brawnesjamal.jpg", Description="brawnesjamaldescription"},
     new Cake { Name="tortablackforest", Price=250 , OldPrice=260 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/tortablackforest.jpg", Description="tortablackforestdescription"},
 };
-    private Cake? selectedCake;
+    
+private Cake? selectedCake;
 
     private async Task OnCakeSelected(Cake cake)
     {
@@ -141,7 +104,7 @@ Style="margin-top:90px !important">
             await Task.Delay(3);
 
             // Navigate to the product details page using the cake's name as a parameter
-            Nav.NavigateTo($"/item/{@Loc[@cake.Name]}");
+            Nav.NavigateTo($"/item/{@cake.Name}");
         }
     }
     private async Task<IEnumerable<Cake>> Search(string value, CancellationToken token)
