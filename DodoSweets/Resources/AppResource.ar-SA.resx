@@ -808,4 +808,43 @@
   <data name="qorsdatesdescription" xml:space="preserve">
     <value>قرص بالعجوه بالزبده البلدي</value>
   </data>
+  <data name="breadlentildescription" xml:space="preserve">
+    <value>خبز عدس دايت بدون دقيق</value>
+  </data>
+  <data name="biscuitoatsdietdescription" xml:space="preserve">
+    <value>بسكوت شوفان دايت</value>
+  </data>
+  <data name="breadoatsdietdescription" xml:space="preserve">
+    <value>خبز شوفان دايت بدون دقيق</value>
+  </data>
+  <data name="trafilcakevanillamangodescription" xml:space="preserve">
+    <value>طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص المانجا</value>
+  </data>
+  <data name="trafilcakevanillastrawberrydescription" xml:space="preserve">
+    <value>طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص الفراوله</value>
+  </data>
+  <data name="trafilcakevanillaberrydescription" xml:space="preserve">
+    <value>طبقات من كيك الفانيليا الإسفنجي وطبقات من كريمه الفانيليا مزينة بصوص التوت</value>
+  </data>
+  <data name="trafilcakevanillachocolatedescription" xml:space="preserve">
+    <value>طبقات من كيك الشوكولاته الإسفنجي وطبقات من كريمه الشوكولاته مزينة بصوص الشوكولاته</value>
+  </data>
+  <data name="cheesecakeberrydescription" xml:space="preserve">
+    <value>طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص التوت</value>
+  </data>
+  <data name="cheesecakestrawberrydescription" xml:space="preserve">
+    <value>طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص الفراوله</value>
+  </data>
+  <data name="cheesecakemixdescription" xml:space="preserve">
+    <value>طبقه من بسكوت الفانيليا تعلوها طبقه من كريمه الجبنه مغطاه بصوص ميكس فراوله وتوت</value>
+  </data>
+  <data name="redvelvetdescription" xml:space="preserve">
+    <value>طبقتين من الكيك المخملي مع طبقتين من كريمه الجبنه</value>
+  </data>
+  <data name="brawnesjamaldescription" xml:space="preserve">
+    <value>كيك غني بالشوكولاته مع عين الجمل مزينة بصوص الشوكولاته</value>
+  </data>
+  <data name="tortablackforestdescription" xml:space="preserve">
+    <value>طبقتين من كيك الشوكولاته الإسفنجي وطبقتين من كريمه الشوكولاته ومزينه بالكريز</value>
+  </data>
 </root>

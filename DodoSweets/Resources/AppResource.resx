@@ -807,4 +807,43 @@
   <data name="qorsdatesdescription" xml:space="preserve">
     <value>Date-filled dry buns with homemade butter</value>
   </data>
+  <data name="breadlentildescription" xml:space="preserve">
+    <value>Diet lentil bread without flour</value>
+  </data>
+  <data name="biscuitoatsdietdescription" xml:space="preserve">
+    <value>Diet oat biscuits</value>
+  </data>
+  <data name="breadoatsdietdescription" xml:space="preserve">
+    <value>Diet oat bread without flour</value>
+  </data>
+  <data name="trafilcakevanillamangodescription" xml:space="preserve">
+    <value>Layers of vanilla sponge cake and layers of vanilla cream, decorated with mango sauce.</value>
+  </data>
+  <data name="trafilcakevanillastrawberrydescription" xml:space="preserve">
+    <value>Layers of vanilla sponge cake and layers of vanilla cream, decorated with strawberry sauce.</value>
+  </data>
+  <data name="trafilcakevanillaberrydescription" xml:space="preserve">
+    <value>Layers of vanilla sponge cake and layers of vanilla cream, decorated with raspberry sauce.</value>
+  </data>
+  <data name="trafilcakevanillachocolatedescription" xml:space="preserve">
+    <value>Layers of chocolate sponge cake and layers of chocolate cream, decorated with chocolate sauce.</value>
+  </data>
+  <data name="cheesecakeberrydescription" xml:space="preserve">
+    <value>A layer of vanilla biscuits topped with a layer of cream cheese frosting, covered with raspberry sauce.</value>
+  </data>
+  <data name="cheesecakestrawberrydescription" xml:space="preserve">
+    <value>A layer of vanilla biscuits topped with a layer of cream cheese frosting, covered with strawberry sauce.</value>
+  </data>
+  <data name="cheesecakemixdescription" xml:space="preserve">
+    <value>A layer of vanilla biscuits topped with a layer of cream cheese frosting, covered with a strawberry and raspberry mixed sauce.</value>
+  </data>
+  <data name="redvelvetdescription" xml:space="preserve">
+    <value>Two layers of velvet cake with two layers of cream cheese frosting</value>
+  </data>
+  <data name="brawnesjamaldescription" xml:space="preserve">
+    <value>Rich chocolate cake with walnuts, decorated with chocolate sauce</value>
+  </data>
+  <data name="tortablackforestdescription" xml:space="preserve">
+    <value>Two layers of chocolate sponge cake, two layers of chocolate cream, and decorated with cherries.</value>
+  </data>
 </root>

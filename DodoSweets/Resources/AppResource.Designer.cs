@@ -205,6 +205,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Diet oat biscuits.
+        /// </summary>
+        public static string biscuitoatsdietdescription {
+            get {
+                return ResourceManager.GetString("biscuitoatsdietdescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Body activity.
         /// </summary>
         public static string Bodyactivity {
@@ -250,6 +259,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rich chocolate cake with walnuts, decorated with chocolate sauce.
+        /// </summary>
+        public static string brawnesjamaldescription {
+            get {
+                return ResourceManager.GetString("brawnesjamaldescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bread lentil 250 gm.
         /// </summary>
         public static string breadlentil {
@@ -259,11 +277,29 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Diet lentil bread without flour.
+        /// </summary>
+        public static string breadlentildescription {
+            get {
+                return ResourceManager.GetString("breadlentildescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to bread oats diet 250 gm.
         /// </summary>
         public static string breadoatsdiet {
             get {
                 return ResourceManager.GetString("breadoatsdiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Diet oat bread without flour.
+        /// </summary>
+        public static string breadoatsdietdescription {
+            get {
+                return ResourceManager.GetString("breadoatsdietdescription", resourceCulture);
             }
         }
         
@@ -385,6 +421,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A layer of vanilla biscuits topped with a layer of cream cheese frosting, covered with raspberry sauce..
+        /// </summary>
+        public static string cheesecakeberrydescription {
+            get {
+                return ResourceManager.GetString("cheesecakeberrydescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cheesecake berry strawberry.
         /// </summary>
         public static string cheesecakemix {
@@ -394,11 +439,29 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A layer of vanilla biscuits topped with a layer of cream cheese frosting, covered with a strawberry and raspberry mixed sauce..
+        /// </summary>
+        public static string cheesecakemixdescription {
+            get {
+                return ResourceManager.GetString("cheesecakemixdescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cheese cake strawberry.
         /// </summary>
         public static string cheesecakestrawberry {
             get {
                 return ResourceManager.GetString("cheesecakestrawberry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A layer of vanilla biscuits topped with a layer of cream cheese frosting, covered with strawberry sauce..
+        /// </summary>
+        public static string cheesecakestrawberrydescription {
+            get {
+                return ResourceManager.GetString("cheesecakestrawberrydescription", resourceCulture);
             }
         }
         
@@ -1663,6 +1726,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Two layers of velvet cake with two layers of cream cheese frosting.
+        /// </summary>
+        public static string redvelvetdescription {
+            get {
+                return ResourceManager.GetString("redvelvetdescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to error.
         /// </summary>
         public static string RegexValidationMessage {
@@ -1906,6 +1978,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Two layers of chocolate sponge cake, two layers of chocolate cream, and decorated with cherries..
+        /// </summary>
+        public static string tortablackforestdescription {
+            get {
+                return ResourceManager.GetString("tortablackforestdescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total calories.
         /// </summary>
         public static string Totalcalories {
@@ -1969,11 +2050,29 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Layers of vanilla sponge cake and layers of vanilla cream, decorated with raspberry sauce..
+        /// </summary>
+        public static string trafilcakevanillaberrydescription {
+            get {
+                return ResourceManager.GetString("trafilcakevanillaberrydescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Trafil cake vanilla chocolate.
         /// </summary>
         public static string trafilcakevanillachocolate {
             get {
                 return ResourceManager.GetString("trafilcakevanillachocolate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Layers of chocolate sponge cake and layers of chocolate cream, decorated with chocolate sauce..
+        /// </summary>
+        public static string trafilcakevanillachocolatedescription {
+            get {
+                return ResourceManager.GetString("trafilcakevanillachocolatedescription", resourceCulture);
             }
         }
         
@@ -1987,11 +2086,29 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Layers of vanilla sponge cake and layers of vanilla cream, decorated with mango sauce..
+        /// </summary>
+        public static string trafilcakevanillamangodescription {
+            get {
+                return ResourceManager.GetString("trafilcakevanillamangodescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Trafil cake vanilla strawberry.
         /// </summary>
         public static string trafilcakevanillastrawberry {
             get {
                 return ResourceManager.GetString("trafilcakevanillastrawberry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Layers of vanilla sponge cake and layers of vanilla cream, decorated with strawberry sauce..
+        /// </summary>
+        public static string trafilcakevanillastrawberrydescription {
+            get {
+                return ResourceManager.GetString("trafilcakevanillastrawberrydescription", resourceCulture);
             }
         }
         
