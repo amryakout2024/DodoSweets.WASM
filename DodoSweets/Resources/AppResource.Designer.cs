@@ -655,6 +655,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dina ibrahem yakout.
+        /// </summary>
+        public static string dinaibrahemyakout {
+            get {
+                return ResourceManager.GetString("dinaibrahemyakout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dinner.
         /// </summary>
         public static string Dinner {
