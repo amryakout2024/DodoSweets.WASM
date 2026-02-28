@@ -1,9 +1,11 @@
 ﻿@using DodoSweets.Models
+@using DodoSweets.Helpers
 @using Microsoft.Extensions.Options
 @using System.Collections.ObjectModel
 @inject NavigationManager Nav
 @inject IStringLocalizer<AppResource> Loc
 @inject IJSRuntime JSRuntime
+@inject IDialogService DialogService
 
 //make pages navigation in blaz
 
@@ -17,7 +19,8 @@
     
     <MudStack Spacing="5" Row="true" Class="d-flex justify-content-center">
         <MudIcon Style="color:deeppink"
-                 Icon="@Icons.Material.Filled.SupportAgent" Size="Size.Medium" />
+                 Icon="@Icons.Material.Filled.SupportAgent" Size="Size.Medium"
+                 @onclick="() => ShowContactInfo()" />
 
         <MudText Style="color:deeppink;font-size:13px;cursor:pointer"
                 @onclick="async ()=>await ChangeLanguage()">@Loc["Lang"]</MudText>
@@ -55,5 +58,10 @@
 
     }
 
+    private void ShowContactInfo()
+    {
+        var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Small };
+        DialogService.Show<ContactDialog>(@Loc["Contactus"], options);
+    }
 }
 

@@ -400,15 +400,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
-    border: 1px solid #FFFFFF;
+/*    color: var(--light);
+*/    border: 1px solid #FFFFFF;
     border-radius: 35px;
-    transition: .3s;
-}
+/*    transition: .3s;
+*/}
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
-}
+/*    color: var(--primary);
+*/}
 
 .footer .btn.btn-link {
     display: block;

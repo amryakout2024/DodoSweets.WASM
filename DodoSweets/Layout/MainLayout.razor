@@ -4,8 +4,16 @@
 <MudRTLProvider RightToLeft="@(CultureInfo.CurrentCulture.Name.StartsWith("ar") ? true : false)">
     <MudThemeProvider />
     <MudPopoverProvider />
-    <MudDialogProvider />
-    <MudSnackbarProvider />
+    <MudDialogProvider FullWidth="false"
+                       MaxWidth="MaxWidth.Small"
+                       Position="DialogPosition.Center" />
+@*     <MudDialogProvider FullWidth="false" NoHeader="true"
+                       MaxWidth="MaxWidth.Small"
+                       CloseButton="true"
+                       BackdropClick="false"
+                       Position="DialogPosition.Center"
+                       CloseOnEscapeKey="true" />
+ *@    <MudSnackbarProvider />
     <MudScrollToTop />
 
     <Header />
