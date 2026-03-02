@@ -2,11 +2,12 @@
 @inject NavigationManager Nav
 @inject IStringLocalizer<AppResource> Loc
 
-<MudCard Style="width:220px;background-color:whitesmoke">
-    <MudCardMedia Image="@Image" Style="background-size:cover;background-position:top;margin-bottom:30px" Height="170"/>
+<MudCard Style="background-color:whitesmoke">
+    <MudCardMedia Image="@Image" Style="background-size:cover;
+    background-position:top;margin-bottom:30px;height:180px"/>
 
     <MudCardContent Style="padding:0px">
-        <MudText Typo="Typo.subtitle1" Align="Align.Center">
+        <MudText Typo="Typo.subtitle1" Align="Align.Center" Style="height:50px">
             @Loc[@Name]
         </MudText>
 
