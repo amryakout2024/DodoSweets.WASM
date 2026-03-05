@@ -1,5 +1,6 @@
 ﻿@using Microsoft.Extensions.Options
 @inject IStringLocalizer<AppResource> Loc
+@inject NavigationManager Nav
 
 <!--inject IOptions<ContactInfoOptions> ContactInfoOptions-->
 
@@ -8,7 +9,7 @@
         <div class="row g-5">
             <div class="col-12 col-md-12 col-lg-6">
                 <div class="footer-border-bottom d-flex flex-column align-items-center justify-content-center rounded p-2">
-                    <a class="anchor-style" href="">
+                    <a class="anchor-style" href="/">
                         <h3 class="mb-3">@Loc["dodossweets"]</h3>
                     </a>
                     <p class="text-white mb-0">
@@ -40,23 +41,18 @@
                     Dinaebrahim1986@gmail.com
                 </p>
                 <div class="d-flex pt-2 justify-content-start">
-@*                     <a class="btn btn-outline-light btn-social m-1" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
- *@  
                     <a class="btn btn-outline-light btn-social m-1" href="https://www.facebook.com/DuraSweets?rdid=7fek4czaTgtC392G&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1U7ZcT13GS%2F#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-social m-1" href="https://www.facebook.com/groups/608863016163356/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-
-@*                     <a class="btn btn-outline-light btn-social m-1" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
- *@
-@*                     <a class="btn btn-outline-light btn-social m-1" href="https://www.linkedin.com/in/amr-yakout-683ba0272/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
- *@                </div>
+                    <a class="btn btn-outline-light btn-social m-1" href="@($"https://wa.me/{phoneNumber}")" target="_self"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="col-md-6 d-flex flex-column align-items-start">
                     <h6 class="frame-title">@Loc["company"]</h6>
-                    <a class="frame-body" href="">@Loc["Whoareus"]</a>
-                    <a class="frame-body" href="">@Loc["privacypolicy"]</a>
-                    <a class="frame-body" href="">@Loc["Termsandconditions"]</a>
+                    <a class="frame-body" style="white-space:nowrap" href="javascript:void(0)">@Loc["Whoareus"]</a>
+                    <a class="frame-body" style="white-space:nowrap" href="javascript:void(0)">@Loc["privacypolicy"]</a>
+                    <a class="frame-body" style="white-space:nowrap" href="javascript:void(0)">@Loc["Termsandconditions"]</a>
                 </div>
             </div>
 
@@ -68,9 +64,9 @@
             <div class="row">
                 <MudStack class="col-md-6 text-start mb-2 p-0" Spacing="0">
                     <MudStack Row="true" Spacing="1">
-                        , @Loc["allrightsreserved"] 
+                        @Loc["allrightsreserved"] 
                         &copy; 
-                        <a style="color:darkslateblue" class="me-1" href="/"> @Loc["dodossweets"]</a>
+                        <a style="color:darkslateblue" class="me-1" href="javascript:void(0)"> @Loc["dodossweets"]</a>
                     </MudStack>
                     <MudStack Row="true" Spacing="1">
                         @Loc["Developedby"]
@@ -91,69 +87,5 @@
 </div>
 
 @code {
-    // private ContactInfoOptions _contactOptions = new();
-    // protected override void OnInitialized()
-    // {
-    //     _contactOptions = ContactInfoOptions.Value;
-    // }
+    string phoneNumber = "201201071921";
 }
-
-
-@*             <div class="col-12 col-md-6 col-lg-3">
-                <h6 class="frame-title text-uppercase mb-4">Contact</h6>
-                <p class="mb-2 d-flex">
-                    <i class="fa fa-map-marker-alt me-3 justify-content-start"></i>
-                    El mahallah elkubra</p>
-                <p class="mb-2 d-flex">
-                    <i class="fa fa-phone-alt me-3 justify-content-start"></i>
-                    0541238108</p>
-                <p class="mb-2 d-flex">
-                    <i class="fa fa-envelope me-3 justify-content-start"></i>
-                    amrnewstory@gmail.com</p>                
-                <div class="d-flex pt-2 justify-content-start">
-                    <a class="btn btn-outline-light btn-social m-1" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social m-1" href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social m-1" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social m-1" href="https://www.linkedin.com/in/amr-yakout-683ba0272/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
- *@
-@* <div class="col-12 col-md-6 col-lg-3">
-    <div class="col-md-6 d-flex flex-column align-items-start">
-        <h6 class="frame-title">Company</h6>
-        <a class="frame-body" href="">About Us</a>
-        <a class="frame-body" href="">Privacy Policy</a>
-        <a class="frame-body" href="">Terms & Condition</a>
-    </div>
-</div>
- *@
-
-@*             <div class="col-md-6 col-lg-3">
-                <div class="col-md-6 d-flex flex-column align-items-start">
-                    <h6 class="frame-title">Dowload App from</h6>
-                    <a class="frame-body d-flex" href="">
-                        <MudText>Play Store</MudText>
-                        <MudIcon Icon="@Icons.Custom.Brands.Google"/>
-                    </a>
-                    <a class="frame-body d-flex" href="">
-                        <MudText>Apple Store</MudText>
-                        <MudIcon Icon="@Icons.Custom.Brands.Apple"/>
-                    </a>
-                </div>
-            </div>
- *@       
-@*                 <MudStack class="col-md-6 text-start mb-2 p-0" Spacing="0">
-    <MudStack Row="true" Spacing="0">
-        &copy;
-        <a style="color:darkslateblue" class="me-1" href="/">Dodo's sweets</a>
-        , All Rights Reserved.
-    </MudStack>
-    <MudStack Row="true" Spacing="0">
-        Developed By
-        <a style="color:darkslateblue" class="ms-1"
-           href="https://www.linkedin.com/in/amr-yakout-683ba0272/">
-            amr yakout
-        </a>
-    </MudStack>
-</MudStack>
- *@
