@@ -2,25 +2,25 @@
 @inject NavigationManager Nav
 @inject IStringLocalizer<AppResource> Loc
 
-<MudCard Style="background-color:white">
+<MudCard Style="background-color:whitesmoke">
     <MudCardMedia Image="@Image" Style="background-size:contain;
-    background-position:top;margin-bottom:30px;height:180px"/>
+    background-position:bottom;margin-bottom:30px;height:180px"/>
 
     <MudCardContent Style="padding:0px">
         <MudText Typo="Typo.subtitle1" Align="Align.Center" Style="height:50px">
-            @Loc[@Name]
+            @Name
         </MudText>
 
         <MudText Align="Align.Center" Color="Color.Error" Typo="Typo.h6">
             @Price @Loc["le"]
         </MudText>
 
-@*         <MudStack Row="true" Justify="Justify.Center" Spacing="1">
+        <MudStack Row="true" Justify="Justify.Center" Spacing="1">
             <MudText Color="Color.Default" Style="text-decoration:line-through">
                 @OldPrice ج
             </MudText>
         </MudStack>
- *@    </MudCardContent>
+    </MudCardContent>
 
     <MudCardActions>
         <MudButton Variant="Variant.Filled"
@@ -39,9 +39,9 @@
     [Parameter] 
         public string? Image { get; set; }
     [Parameter] 
-        public decimal Price { get; set; }
+        public string? Price { get; set; }
     [Parameter] 
-        public decimal OldPrice { get; set; }
+        public string? OldPrice { get; set; }
 
     void AddToCart()
     {

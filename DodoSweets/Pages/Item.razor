@@ -13,14 +13,14 @@
         <MudCard Elevation="3">
             <MudCardHeader>
                 <CardHeaderContent>
-                    <MudText Typo="Typo.h4" Style="text-align:center">@Loc[@cake.Name]</MudText>
+                    <MudText Typo="Typo.h4" Style="text-align:center">@cake.Name</MudText>
                 </CardHeaderContent>
             </MudCardHeader>
 
             <MudCardMedia Image="@cake.Image" Style="background-size:contain;background-position:top;margin-bottom:30px" />
 
             <MudCardContent>
-                <MudText Typo="Typo.body1">@Loc[@cake.Description]</MudText>
+                <MudText Typo="Typo.body1">@cake.Description</MudText>
                 <MudText Color="Color.Error" Typo="Typo.h6">
                     @cake.Price @Loc["le"]
                 </MudText>

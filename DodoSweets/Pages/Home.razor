@@ -3,7 +3,7 @@
 @using System.Collections.ObjectModel
 @inject NavigationManager Nav
 @inject IStringLocalizer<AppResource> Loc
-
+@inject HttpClient http
 <PageTitle>Home</PageTitle>
 
 <div style="display:flex;justify-content:center;
@@ -57,45 +57,78 @@ Style="margin-top:90px !important">
     private bool coerceValue;
     private bool selectedOnTab;
 
-    public static ObservableCollection<Cake> Cakes = new()
-{
-    new Cake { Name="dispacetochocolatelarge", Price= 100, OldPrice= 120, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatelarge.jpg", Description="dispacetochocolatelargedescription"},
-    new Cake { Name="dispacetochocolatemedium", Price= 40, OldPrice= 50, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatemedium.jpg", Description="dispacetochocolatemediumdescription"},
-    new Cake { Name="dispacetochocolatesmall", Price= 30, OldPrice= 35, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatesmall.jpg", Description="dispacetochocolatesmalldescription"},
-    new Cake { Name="dispasetodiet", Price=125 , OldPrice=130 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispasetodiet.jpg", Description="dispasetodietdescription"},
+    public static ObservableCollection<Cake> Cakes;
 
-    new Cake { Name="fadegchocolatenuts", Price=70 , OldPrice=80 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatenuts.jpg", Description="fadegchocolatenutsdescription"},
-    new Cake { Name="fadegchocolatejamal", Price=70 , OldPrice=85 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatejamal.jpg", Description="fadegchocolatejamaldescription"},
-    new Cake { Name="fadegchocolatecaramel", Price=70 , OldPrice=80 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatecaramel.jpg", Description="fadegchocolatecarameldescription"},
+    //     public static ObservableCollection<Cake> Cakes = new()
+    // {
+    //     new Cake { Name="dispacetochocolatelarge", Price= 100, OldPrice= 120, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatelarge.png", Description="dispacetochocolatelargedescription"},
+    //     new Cake { Name="dispacetochocolatemedium", Price= 40, OldPrice= 50, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatemedium.png", Description="dispacetochocolatemediumdescription"},
+    //     new Cake { Name="dispacetochocolatesmall", Price= 30, OldPrice= 35, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispacetochocolatesmall.png", Description="dispacetochocolatesmalldescription"},
+    //     new Cake { Name="dispasetodiet", Price=125 , OldPrice=130 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dispasetodiet.png", Description="dispasetodietdescription"},
 
-    new Cake { Name="basbosacreamy", Price=150 , OldPrice=165 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosacreamy.jpg", Description="basbosacreamydescription"},
-    new Cake { Name="basbosaalmond", Price=400 , OldPrice=410 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosaalmond.jpg", Description="basbosaalmonddescription"},
-    new Cake { Name="basbosahazelnut", Price=200 , OldPrice=210 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosahazelnut.jpg", Description="basbosahazelnutdescription"},
-    new Cake { Name="konafanabulsia", Price=400 , OldPrice=440 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/konafanabulsia.jpg", Description="konafanabulsiadescription"},
+    //     new Cake { Name="fadegchocolatenuts", Price=70 , OldPrice=80 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatenuts.png", Description="fadegchocolatenutsdescription"},
+    //     new Cake { Name="fadegchocolatejamal", Price=70 , OldPrice=85 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatejamal.png", Description="fadegchocolatejamaldescription"},
+    //     new Cake { Name="fadegchocolatecaramel", Price=70 , OldPrice=80 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/fadegchocolatecaramel.png", Description="fadegchocolatecarameldescription"},
 
-    new Cake { Name="qaraqeshdates", Price=250 , OldPrice=270 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qaraqeshdates.jpg", Description="qaraqeshdatesdescription"},
-    new Cake { Name="qaraqeshsada", Price=350 , OldPrice=360 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qaraqeshsada.jpg", Description="qaraqeshsadadescription"},
-    new Cake { Name="qorsdates", Price=300 , OldPrice=320 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qorsdates.jpg", Description="qorsdatesdescription"},
+    //     new Cake { Name="basbosacreamy", Price=150 , OldPrice=165 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosacreamy.png", Description="basbosacreamydescription"},
+    //     new Cake { Name="basbosaalmond", Price=400 , OldPrice=410 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosaalmond.png", Description="basbosaalmonddescription"},
+    //     new Cake { Name="basbosahazelnut", Price=200 , OldPrice=210 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/basbosahazelnut.png", Description="basbosahazelnutdescription"},
+    //     new Cake { Name="konafanabulsia", Price=400 , OldPrice=440 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/konafanabulsia.png", Description="konafanabulsiadescription"},
 
-    new Cake { Name="breadlentil", Price=80 , OldPrice=85 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/breadlentil.jpg", Description="breadlentildescription"},
-    new Cake { Name="biscuitoatsdiet", Price=125 , OldPrice=130 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/biscuitoatsdiet.jpg", Description="biscuitoatsdietdescription"},
-    new Cake { Name="breadoatsdiet", Price=70 , OldPrice=75 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/breadoatsdiet.jpg", Description="breadoatsdietdescription"},
+    //     new Cake { Name="qaraqeshdates", Price=250 , OldPrice=270 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qaraqeshdates.png", Description="qaraqeshdatesdescription"},
+    //     new Cake { Name="qaraqeshsada", Price=350 , OldPrice=360 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qaraqeshsada.png", Description="qaraqeshsadadescription"},
+    //     new Cake { Name="qorsdates", Price=300 , OldPrice=320 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/qorsdates.png", Description="qorsdatesdescription"},
 
-    new Cake { Name="trafilcakevanillamango", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillamango.jpg", Description="trafilcakevanillamangodescription"},
-    new Cake { Name="trafilcakevanillastrawberry", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillastrawberry.jpg", Description="trafilcakevanillastrawberrydescription"},
-    new Cake { Name="trafilcakevanillaberry", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillaberry.jpg", Description="trafilcakevanillaberrydescription"},
-    new Cake { Name="trafilcakevanillachocolate", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillachocolate.jpg", Description="trafilcakevanillachocolatedescription"},
+    //     new Cake { Name="breadlentil", Price=80 , OldPrice=85 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/breadlentil.png", Description="breadlentildescription"},
+    //     new Cake { Name="biscuitoatsdiet", Price=125 , OldPrice=130 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/biscuitoatsdiet.png", Description="biscuitoatsdietdescription"},
+    //     new Cake { Name="breadoatsdiet", Price=70 , OldPrice=75 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/breadoatsdiet.png", Description="breadoatsdietdescription"},
 
-    new Cake { Name="cheesecakeberry", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakeberry.jpg", Description="cheesecakeberrydescription"},
-    new Cake { Name="cheesecakestrawberry", Price=75 , OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakestrawberry.jpg", Description="cheesecakestrawberrydescription"},
-    new Cake { Name="cheesecakemix", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakemix.jpg", Description="cheesecakemixdescription"},
+    //     new Cake { Name="trafilcakevanillamango", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillamango.png", Description="trafilcakevanillamangodescription"},
+    //     new Cake { Name="trafilcakevanillastrawberry", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillastrawberry.png", Description="trafilcakevanillastrawberrydescription"},
+    //     new Cake { Name="trafilcakevanillaberry", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillaberry.png", Description="trafilcakevanillaberrydescription"},
+    //     new Cake { Name="trafilcakevanillachocolate", Price=30 , OldPrice=35 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/trafilcakevanillachocolate.png", Description="trafilcakevanillachocolatedescription"},
 
-    new Cake { Name="redvelvet", Price=70 , OldPrice=90 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/redvelvet.jpg", Description="redvelvetdescription"},
-    new Cake { Name="brawnesjamal", Price=50 , OldPrice=60 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/brawnesjamal.jpg", Description="brawnesjamaldescription"},
-    new Cake { Name="tortablackforest", Price=250 , OldPrice=260 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/tortablackforest.jpg", Description="tortablackforestdescription"},
-};
-    
-private Cake? selectedCake;
+    //     new Cake { Name="cheesecakeberry", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakeberry.png`````", Description="cheesecakeberrydescription"},
+    //     new Cake { Name="cheesecakestrawberry", Price=75 , OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakestrawberry.png", Description="cheesecakestrawberrydescription"},
+    //     new Cake { Name="cheesecakemix", Price= 75, OldPrice= 80, Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/cheesecakemix.png", Description="cheesecakemixdescription"},
+
+    //     new Cake { Name="redvelvet", Price=70 , OldPrice=90 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/redvelvet.png", Description="redvelvetdescription"},
+    //     new Cake { Name="brawnesjamal", Price=50 , OldPrice=60 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/brawnesjamal.png", Description="brawnesjamaldescription"},
+    //     new Cake { Name="tortablackforest", Price=250 , OldPrice=260 , Image="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/tortablackforest.png", Description="tortablackforestdescription"},
+    // };
+
+    private Cake? selectedCake;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            if (CultureInfo.CurrentUICulture.Name == "en-US")
+            {
+                var data = await http.GetFromJsonAsync<List<Cake>>("https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/CakesEn");
+
+                if (data != null)
+                {
+                    Cakes = new ObservableCollection<Cake>(data);
+                }
+
+            }
+            else
+            {
+                var data = await http.GetFromJsonAsync<List<Cake>>("https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/CakesAr");
+
+                if (data != null)
+                {
+                    Cakes = new ObservableCollection<Cake>(data);
+                }
+
+            }
+        }
+        catch (Exception ex)
+        {
+            
+        }
+    }
 
     private async Task OnCakeSelected(Cake cake)
     {
