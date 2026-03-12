@@ -1,0 +1,70 @@
+﻿@inject MudBlazor.ISnackbar Snackbar
+@inject NavigationManager Nav
+@inject IStringLocalizer<AppResource> Loc
+
+<MudCard Style="background-color:#fbfbfb">
+    <MudCardMedia Image="@Image" Style="background-size:contain;
+    background-position:bottom;margin-bottom:30px;height:170px"/>
+
+    <MudCardContent Style="padding:0px">
+        <MudText Typo="Typo.subtitle1" Align="Align.Center" Style="height:50px">
+            @Name
+        </MudText>
+
+        <MudText Align="Align.Center" Style="height:30px" Color="Color.Error" Typo="Typo.subtitle1">
+            @NewPrice
+            @if (!string.IsNullOrEmpty(NewPrice))
+            {
+                <MudText Style="margin:0px 5px 0px 5px !important;display:inline" Color="Color.Error" Typo="Typo.subtitle1">@Loc["le"]</MudText>
+            }
+        </MudText>
+
+        @if (string.IsNullOrEmpty(NewPrice))
+        {
+            <MudStack Row="true" Justify="Justify.Center" Spacing="1" Typo="Typo.h6">
+                <MudText Color="Color.Default">
+                    @Price&nbsp;@Loc["le"]
+                </MudText>
+            </MudStack>
+        }
+        @if (!string.IsNullOrEmpty(NewPrice))
+        {
+            <MudStack Row="true" Justify="Justify.Center" Spacing="1" Typo="Typo.h6">
+                <MudText Color="Color.Default" Style="text-decoration:line-through">
+                    @Price&nbsp;@Loc["le"]
+                </MudText>
+            </MudStack>
+        }
+
+
+
+    </MudCardContent>
+
+    <MudCardActions>
+        <MudButton Variant="Variant.Filled"
+                   Color="Color.Primary"
+                   FullWidth="true" 
+                   onclick="@AddToCart">
+            @Loc["Show"]
+        </MudButton>
+    </MudCardActions>
+</MudCard>
+
+@code {
+
+    [Parameter] 
+        public string? Name { get; set; }
+    [Parameter] 
+        public string? Image { get; set; }
+    [Parameter] 
+        public string? NewPrice { get; set; }
+    [Parameter] 
+        public string? Price { get; set; }
+
+    void AddToCart()
+    {
+        Nav.NavigateTo($"/item/{Name}");
+
+        // Snackbar.Add("Operation successful!", Severity.Success);
+    }
+}

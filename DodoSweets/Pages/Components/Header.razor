@@ -1,0 +1,105 @@
+﻿@using DodoSweets.Models
+@using DodoSweets.Helpers
+@using Microsoft.Extensions.Options
+@using System.Collections.ObjectModel
+@inject NavigationManager Nav
+@inject IStringLocalizer<AppResource> Loc
+@inject IJSRuntime JSRuntime
+@inject IDialogService DialogService
+@inject HttpClient http
+
+//make pages navigation in blaz
+
+
+<div 
+    class="container-fluid d-flex align-items-center p-3
+        justify-content-around" 
+    style="position:fixed;top:0;z-index:1;background-color:white;height:115px">
+    
+    <MudImage src="https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/dodoslogo.jpg" Class="d-block header-logo" alt="Dodo's Cakes Logo" />
+    
+    <MudStack Spacing="5" Row="true" Class="d-flex justify-content-center">
+        <MudIcon Style="color:deeppink;cursor:pointer"
+                 Icon="@Icons.Material.Filled.SupportAgent" Size="Size.Medium"
+                 @onclick="() => ShowContactInfo()" />
+
+        <MudText Style="color:deeppink;font-size:13px;cursor:pointer"
+                @onclick="async ()=>await ChangeLanguage()">@Loc["Lang"]</MudText>
+
+    </MudStack>
+</div>
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        var d = Loc["Lang"];
+    }
+
+    public async Task ChangeLanguage()
+    {
+        if (CultureInfo.CurrentUICulture.Name == "en-US")
+        {
+
+        }
+        else
+        {
+        }
+
+        try
+        {
+            if (CultureInfo.CurrentUICulture.Name == "en-US")
+            {
+                var data = await http.GetFromJsonAsync<List<Cake>>("https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/CakesAr");
+
+                if (data != null)
+                {
+                    Home.Cakes = new ObservableCollection<Cake>(data);
+                }
+
+                // 1. Store the preference in local storage for persistence
+                await JSRuntime.InvokeVoidAsync("localStorage.setItem", "BlazorCulture", "ar-SA");
+
+                // 2. Force a reload to let the Program.cs apply the new culture on startup
+                
+                // load to the home page
+                Nav.NavigateTo("/", forceLoad: true); 
+                // load to the recent uri
+                // Nav.NavigateTo(Nav.Uri, forceLoad: true);
+
+            }
+            else
+            {
+                var data = await http.GetFromJsonAsync<List<Cake>>("https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/CakesEn");
+
+                if (data != null)
+                {
+                    Home.Cakes = new ObservableCollection<Cake>(data);
+                }
+
+                // 1. Store the preference in local storage for persistence
+                await JSRuntime.InvokeVoidAsync("localStorage.setItem", "BlazorCulture", "en-US");
+
+                // 2. Force a reload to let the Program.cs apply the new culture on startup
+                
+                // load to the home page
+                Nav.NavigateTo("/", forceLoad: true);
+                // load to the recent uri
+                // Nav.NavigateTo(Nav.Uri, forceLoad: true);
+
+            }
+        }
+        catch (Exception ex)
+        {
+
+        }
+
+    }
+
+    private void ShowContactInfo()
+    {
+        var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Small };
+        DialogService.Show<ContactDialog>(@Loc["Contactus"], options);
+    }
+}
+

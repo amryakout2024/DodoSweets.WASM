@@ -1,8 +1,9 @@
 ﻿@page "/item/{Name}"
 @using DodoSweets.Models
 @inject IStringLocalizer<AppResource> Loc
+<PageTitle>@Loc["Cake"]</PageTitle>
 
-<MudContainer Class="mt-5">
+<MudContainer Class="mt-5" Style="background-color:#fbfbfb">
 
     @if (cake == null)
     {
@@ -21,9 +22,31 @@
 
             <MudCardContent>
                 <MudText Typo="Typo.body1">@cake.Description</MudText>
-                <MudText Color="Color.Error" Typo="Typo.h6">
-                    @cake.Price @Loc["le"]
+
+                <MudText Style="height:30px" Color="Color.Error" Typo="Typo.subtitle1">
+                    @cake.NewPrice
+                    @if (!string.IsNullOrEmpty(@cake.NewPrice))
+                    {
+                        <MudText Style="margin:0px 5px 0px 5px !important;display:inline" Color="Color.Error" Typo="Typo.subtitle1">@Loc["le"]</MudText>
+                    }
                 </MudText>
+
+                @if (string.IsNullOrEmpty(@cake.NewPrice))
+                {
+                    <MudStack Row="true" Spacing="1" Typo="Typo.h6">
+                        <MudText Color="Color.Default">
+                            @cake.Price&nbsp;@Loc["le"]
+                        </MudText>
+                    </MudStack>
+                }
+                @if (!string.IsNullOrEmpty(@cake.NewPrice))
+                {
+                    <MudStack Row="true" Spacing="1" Typo="Typo.h6">
+                        <MudText Color="Color.Default" Style="text-decoration:line-through">
+                            @cake.Price&nbsp;@Loc["le"]
+                        </MudText>
+                    </MudStack>
+                }
 
             </MudCardContent>
             <MudCardActions>
@@ -44,9 +67,4 @@
     {
         cake = Home.Cakes.Where(x => x.Name == Name).FirstOrDefault() ?? new Cake();
     }
-
-    // protected override async Task<Cake> OnInitializedAsync()
-    // {
-    //     return Home.Cakes.Where(x => x.Name == Name).FirstOrDefault() ?? new Cake();
-    // }
 }

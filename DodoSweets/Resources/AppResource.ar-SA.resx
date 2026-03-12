@@ -850,4 +850,7 @@
   <data name="dina" xml:space="preserve">
     <value>دينا</value>
   </data>
+  <data name="Cake" xml:space="preserve">
+    <value>الحلوى</value>
+  </data>
 </root>

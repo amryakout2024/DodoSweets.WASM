@@ -4,7 +4,7 @@
 @inject NavigationManager Nav
 @inject IStringLocalizer<AppResource> Loc
 @inject HttpClient http
-<PageTitle>Home</PageTitle>
+<PageTitle>@Loc["Home"]</PageTitle>
 
 <div style="display:flex;justify-content:center;
         width:100%;
@@ -19,7 +19,7 @@
         Value="selectedCake"
         ValueChanged="OnCakeSelected"
         SearchFunc="@Search"
-                     ToStringFunc="@(c => @Loc[@c.Name])"
+                     ToStringFunc="@(c => @c.Name)"
         AdornmentIcon="@Icons.Material.Filled.Search"
         AdornmentColor="Color.Primary"
         ResetValueOnEmptyText="@resetValueOnEmptyText"
@@ -29,7 +29,7 @@
         <ItemTemplate Context="cake">
             <div style="display:flex; align-items:center; gap:10px;">
                 <MudImage Src="@cake.Image" Style="height:50px;background-size:contain" />
-                <span>@Loc[@cake.Name]</span>
+                <span>@cake.Name</span>
             </div>
         </ItemTemplate>
     </MudAutocomplete>
@@ -44,8 +44,8 @@ Style="margin-top:90px !important">
          <MudItem xs="6" sm="4" md="3" lg="2">
             <ProductCard Name=@p.Name
                          Image="@p.Image"
-                         Price="@p.Price"
-                         OldPrice="@p.OldPrice" />
+                         NewPrice="@p.NewPrice"
+                         Price="@p.Price" />
         </MudItem>
     }
  </MudGrid>
@@ -57,7 +57,7 @@ Style="margin-top:90px !important">
     private bool coerceValue;
     private bool selectedOnTab;
 
-    public static ObservableCollection<Cake> Cakes;
+    public static ObservableCollection<Cake> Cakes=new ObservableCollection<Cake>();
 
     //     public static ObservableCollection<Cake> Cakes = new()
     // {

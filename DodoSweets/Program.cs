@@ -28,6 +28,6 @@ var culture = CultureName ?? "en-US";
 
 var cultureInfo = new CultureInfo(culture);
 CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
-CultureInfo.DefaultThreadCurrentUICulture = cultureInfo; 
+CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
 await host.RunAsync();

@@ -313,6 +313,15 @@ namespace DodoSweets.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cake.
+        /// </summary>
+        public static string Cake {
+            get {
+                return ResourceManager.GetString("Cake", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to cal.
         /// </summary>
         public static string Cal {
