@@ -105,21 +105,21 @@ Style="margin-top:90px !important">
         {
             if (CultureInfo.CurrentUICulture.Name == "en-US")
             {
-                var data = await http.GetFromJsonAsync<List<Cake>>("https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/CakesEn");
+                var data = await http.GetFromJsonAsync<SweetsData>("https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/CakesEn");
 
                 if (data != null)
                 {
-                    Cakes = new ObservableCollection<Cake>(data);
+                    Cakes = new ObservableCollection<Cake>(data.Cakes);
                 }
 
             }
             else
             {
-                var data = await http.GetFromJsonAsync<List<Cake>>("https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/CakesAr");
+                var data = await http.GetFromJsonAsync<SweetsData>("https://raw.githubusercontent.com/amryakout2024/Sweets-Images/main/CakesAr");
 
                 if (data != null)
                 {
-                    Cakes = new ObservableCollection<Cake>(data);
+                    Cakes = new ObservableCollection<Cake>(data.Cakes);
                 }
 
             }
